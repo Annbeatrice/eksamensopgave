@@ -10,14 +10,28 @@
 
 <body>
 
-   <h2>Om Per Bo</h2>
-   <div data-receiver-top></div>
-   <template data-template-om-top>
-        <div class="text_om"></div>
-        <img src="" alt="" class="image_om">
+
+   <div data-receiver></div>
+   <template data-template-om>
+        <h2>Om Per Bo</h2>
+        <div class="text_om" data-text-om>
+
+        </div>
+        <img src="" alt="" class="image_om" data-image-om>
+        <h2>Erhvervskunder</h2>
+        <div class="about_clients" data-about-clients></div>
+        <h3>Engro</h3>
+        <div class="list_clients" data-engrolist-clients></div>
+        <h3>Restauranger</h3>
+        <div class="list_clients" data-restaurantlist-clients></div>
+
    </template>
 
-    <section class="section_om">
+
+
+
+
+<section class="section_om">
         <div class="video_items">
 <!--            video class="mini_video"-->
             <span class="video_description"></span>
@@ -40,14 +54,9 @@
 
     </section>
 
-<h2>Erhvervskunder</h2>
-    <div data-reciever-bottom></div>
-    <template data-template-om-bottom>
-        <div class="about_clients"></div>
-        <div class="list_clients"></div>
-    </template>
 
-    <script src=""></script>
+
+    <script src="om.js"></script>
 </body>
 
 </html>

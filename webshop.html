@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
@@ -29,17 +29,23 @@
        <a href="" class="button">Kategorier</a>
     </section>
 
-      <div data-reciever></div>
+
+
+
+        <div data-reciever></div>
+
    <template data-template-webshop>
-       <div class="webshop_items">
-           <img src="" alt="" class="item_image">
-           <span class="item_description"></span>
-           <a href="" class="button_buy"></a>
-       </div>
+
+        <div class="webshop_item">
+          <span class="item_title" data-item-title></span>
+           <img src="" alt="" class="item_image" data-item-image>
+           <span class="item_description" data-item-description></span>
+           <span class="price" data-item-price></span>
+        </div>
 
    </template>
+           <a href="" class="button_buy"></a>
 
-
-    <script src=""></script>
+    <script src="webshop.js"></script>
 </body>
 </html>

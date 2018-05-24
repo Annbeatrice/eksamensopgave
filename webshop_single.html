@@ -4,24 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
 
     <div data-reciever></div>
+
     <template data-template-webshop-single>
+
        <article class="product">
-        <h2 class="title"></h2>
-        <img src="" alt="" class="product_image">
-       <span class="product_description"></span>
+        <h2 class="title" data-item-title></h2>
+        <img src="" alt="" class="product_image" data-item-image>
+       <span class="product_description" data-item-description></span>
+       <span class="price" data-item-price></span>
        </article>
+
     </template>
 
-       <a href="" class="button_buy"></a>
+       <a href="" class="button_buy">Køb</a>
 
 
 
-    <script src=""></script>
+    <script src="webshop_single.js"></script>
 </body>
 </html>
