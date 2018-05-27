@@ -1,8 +1,7 @@
 /* definera mottagaren*/
 
-let reciever = document.querySelector("[data-receiver]");
+let receiver = document.querySelector("[data-receiver]");
 
-/* definera namn åt funktionen så man kan slipper skriva hela funktionen om och om igen */
 
 let om;
 
@@ -13,7 +12,6 @@ let template = document.querySelector("[data-template-om]");
 /* klona template */
 
 let template_clone = template.cloneNode(true).content;
-
 
 /* dokument lägg till denna lyssnare: när html laddats färdigt hämta jsonfunktionen getJson */
 
@@ -47,7 +45,7 @@ function showOm(){
     template_clone.querySelector("[data-engrolist-clients]").innerHTML = om.acf.engro_list;
     template_clone.querySelector("[data-restaurantlist-clients]").innerHTML = om.acf.engro_list;
 
-    reciever.appendChild(template_clone);
+    receiver.appendChild(template_clone);
 
 
 }

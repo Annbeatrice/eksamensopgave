@@ -5,17 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
+<header id="header" data-header>
 
-
+</header>
    <div data-receiver></div>
    <template data-template-om>
-        <h2>Om Per Bo</h2>
+        <h1>Om Per Bo</h1>
+           <div class="border"></div>
         <div class="text_om" data-text-om>
-
         </div>
         <img src="" alt="" class="image_om" data-image-om>
         <h2>Erhvervskunder</h2>
@@ -26,10 +27,6 @@
         <div class="list_clients" data-restaurantlist-clients></div>
 
    </template>
-
-
-
-
 
 <section class="section_om">
         <div class="video_items">
@@ -53,10 +50,13 @@
         </div>
 
     </section>
-
-
-
+	<footer id="footer" class="footer_grid" data-footer></footer>
     <script src="om.js"></script>
+    	<script src="header.js"></script>
+        <script src="footer.js"></script>
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL_Ih-tJnDNMcCvvYdN1tBeEMRY8yjwsE">
+    </script>
 </body>
 
 </html>

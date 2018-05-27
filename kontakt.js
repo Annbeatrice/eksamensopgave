@@ -1,4 +1,4 @@
-let reciever = document.querySelector("[data-receiver]");
+let receiver = document.querySelector("[data-receiver]");
 
 let contact;
 
@@ -28,5 +28,5 @@ function showContact(){
     template_clone.querySelector("[data-email]").innerHTML = contact.acf.email;
 
 
-    reciever.appendChild(template_clone);
+    receiver.appendChild(template_clone);
 }

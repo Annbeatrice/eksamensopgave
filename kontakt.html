@@ -9,36 +9,46 @@
 
 <body>
 
-   <h2 class="title">Kontakt</h2>
+  <header id="header" data-header>
 
-   <div data-receiver></div>
+</header>
 
 
-    <template data-template-contact>
+   <h1 class="title">Kontakt</h1>
+           <div class="border"></div>
+   <div data-receiver class="contact_receiver"></div>
+
+
+    <template data-template-contact class="contact">
 
     <h3>Åbningstider</h3>
-        <div class="text_box" data-opening-hours></div>
+        <div class="opening_hours" data-opening-hours></div>
 
     <h3>Kontakt</h3>
 
-        <div class="text_box" data-number></div>
+        <div class="number" data-number></div>
 
     <h3>CVR</h3>
 
-        <div class="text_box" data-cvr></div>
+        <div class="cvr" data-cvr></div>
 
     <h3>Adresse</h3>
 
-        <div class="text_box" data-address></div>
+        <div class="address" data-address></div>
 
     <h3>Email</h3>
 
-        <div class="text_box" data-email></div>
+        <div class="email" data-email></div>
 
     </template>
 
-
+	<footer id="footer" class="footer_grid" data-footer></footer>
 
     <script src="kontakt.js"></script>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL_Ih-tJnDNMcCvvYdN1tBeEMRY8yjwsE">
+    </script>
 </body>
 </html>

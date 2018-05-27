@@ -1,3 +1,13 @@
+window.addEventListener("load", hentFooter);
+
+async function hentFooter() {
+	let footerHentes = await fetch("footer.html");
+	let footer = await footerHentes.text();
+	document.querySelector("#footer").innerHTML = footer;
+    initMap();
+}
+
+
 function initMap() {
           //koordinater för kartans centrum
           let perbo = {lat: 55.672203, lng: 12.594810};

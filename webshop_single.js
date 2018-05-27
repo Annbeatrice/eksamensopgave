@@ -1,8 +1,8 @@
-//let url = new URL(window.location.href);
-//let parameter = new URLSearchParams(url.search);
-//let id = parameter.get("id");
+let url = new URL(window.location.href);
+let parameter = new URLSearchParams(url.search);
+let id = parameter.get("id");
 
-let reciever = document.querySelector("[data-reciever]");
+let receiver = document.querySelector("[data-receiver]");
 
 let single;
 
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", getJson);
 
 async function getJson() {
 
-    let jsonObject = await fetch("http://josefinerasch.dk/kea/08-eksamensprojekt/wordpress/wp-json/wp/v2/webshop/74");
+    let jsonObject = await fetch("http://josefinerasch.dk/kea/08-eksamensprojekt/wordpress/wp-json/wp/v2/webshop/" + id);
 
     single = await jsonObject.json();
 
@@ -30,6 +30,6 @@ function showSingle(){
     template_clone.querySelector("[data-item-description]").innerHTML = single.acf.product_description;
     console.log(single);
 
-    reciever.appendChild(template_clone);
+    receiver.appendChild(template_clone);
 
 }

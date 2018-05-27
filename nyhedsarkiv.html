@@ -8,28 +8,32 @@
 </head>
 
 <body>
+<header id="header" data-header>
 
-      <h2 class="title">Nyheder</h2>
-
+</header>
+                <div class="border"></div>
+      <h1 class="title">Nyheder</h1>
+           <div class="border"></div>
     <section class="section_button">
        <a href="" class="button">Nyeste</a>
        <a href="" class="button">Populære</a>
     </section>
 
-
-   <div data-reciever></div>
+   <div data-receiver class="receiver_nyhedsarkiv"></div>
    <template data-template-nyhedsarkiv>
       <div class="nyhed">
-      <h3 data-news-title></h3>
+      <h3 data-news-title class="newsletter_title"></h3>
        <div class="text_box" data-text-box></div>
        <img src="" alt="" class="newsletter_image" data-news-image>
        </div>
    </template>
-
-
-
-
+	<footer id="footer" class="footer_grid" data-footer></footer>
 
     <script src="nyhedsarkiv.js"></script>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL_Ih-tJnDNMcCvvYdN1tBeEMRY8yjwsE">
+    </script>
 </body>
 </html>
