@@ -2,37 +2,32 @@ body{
     margin: 0;
 }
 
+
+.header_container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+}
+
+
 .header_wrapper{
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-    }
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 40px;
+}
 
-    nav{
-        display: grid;
-        grid-column: span 5;
-        margin: 10px;
-    }
-    .om_nav{
-        grid-column: 1;
 
-    }
-    .kontakt_nav{
-        grid-column: 2;
+.header_wrapper a{
+/*    border: solid 1px black;*/
+}
+.logo{
+    grid-column: 1;
+    grid-row: 1;
 
-    }
-    .videogalleri_nav{
-        grid-column: 3;
-
-    }
-    .nyhedsarkiv_nav{
-        grid-column: 4;
-
-    }
-    .webshop_nav   {
-        grid-column: 5;
-
-    }
-
+}
+.logo img{
+    width: 50%;
+}
 a{
     text-decoration: none;
     color: black;
@@ -43,6 +38,7 @@ h1{
     font-family: 'Playfair Display', serif;
 }
 
+/*
 .border{
     position: absolute;
     border: solid 1px rgba(40, 40, 40, 0.36);
@@ -51,6 +47,7 @@ h1{
     right: 10vw;
     max-width: 1024px;
 }
+*/
 
 img{
     width:100%;
@@ -326,13 +323,15 @@ img{
 
 .nyhed{
     display: grid;
-    grid-template-columns: repeat (2, 1fr);
+    grid-template-columns: 40% 60%;
     border: solid 1px black;
     margin: 10px;
 }
 
 .newsletter_title{
     grid-column-start: 1;
+        align-self: center;
+    justify-self: center;
 }
 
 .text_box{
@@ -342,9 +341,9 @@ img{
 
 }
 .newsletter_image{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
+    grid-column: 2;
+grid-row: 1 / 2;
+    width: 100%;
 }
 
 /******Nyhedsarkiv end*****/
