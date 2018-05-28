@@ -1,18 +1,53 @@
 
 <div class="header_wrapper">
-
-    <nav>
-
-       <a href="om.html">Om</a>
-       <a href="kontakt.html">Kontakt</a>
-       <a href="videogalleri.html">Videogalleri</a>
-       <a href="nyhedsarkiv.html">Nyhedsarkiv</a>
-       <a href="webshop.html">Webshop</a>
-  </nav>
-
-</div>
     <a href="" class="logo">
        <img src="img/logo-06.png" alt="" class="logo">
    </a>
+    <nav>
+
+       <a href="om.html" class="om_nav">Om</a>
+       <a href="kontakt.html" class="kontakt_nav">Kontakt</a>
+       <a href="videogalleri.html" class="videogalleri_nav">Videogalleri</a>
+       <a href="nyhedsarkiv.html" class="nyhedsarkiv_nav">Nyhedsarkiv</a>
+       <a href="webshop.html" class="webshop_nav">Webshop</a>
+  </nav>
+
+</div>
 
 
+
+<style>
+
+    .header_wrapper{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    nav{
+        display: grid;
+        grid-column: span 5;
+        margin: 10px;
+    }
+    .om_nav{
+        grid-column: 1;
+
+    }
+    .kontakt_nav{
+        grid-column: 2;
+
+    }
+    .videogalleri_nav{
+        grid-column: 3;
+
+    }
+    .nyhedsarkiv_nav{
+        grid-column: 4;
+
+    }
+    .webshop_nav   {
+        grid-column: 5;
+
+    }
+
+
+</style>

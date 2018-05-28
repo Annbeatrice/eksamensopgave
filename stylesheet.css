@@ -1,30 +1,37 @@
 body{
     margin: 0;
 }
-header{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin: 1vw 0 2vw 0;
-
-
-}
 
 .header_wrapper{
-        grid-column-start: 2;
-}
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
 
-nav{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+    nav{
+        display: grid;
+        grid-column: span 5;
+        margin: 10px;
+    }
+    .om_nav{
+        grid-column: 1;
 
-}
+    }
+    .kontakt_nav{
+        grid-column: 2;
 
-.logo{
-    grid-column-start: 1;
-    grid-row-start: 1;
-    width: 20vw;
-    z-index: 4;
-}
+    }
+    .videogalleri_nav{
+        grid-column: 3;
+
+    }
+    .nyhedsarkiv_nav{
+        grid-column: 4;
+
+    }
+    .webshop_nav   {
+        grid-column: 5;
+
+    }
 
 a{
     text-decoration: none;
@@ -40,8 +47,9 @@ h1{
     position: absolute;
     border: solid 1px rgba(40, 40, 40, 0.36);
     border-width: thin;
-    left: 15vw;
-    right: 15vw;
+    left: 10vw;
+    right: 10vw;
+    max-width: 1024px;
 }
 
 img{
@@ -67,7 +75,7 @@ img{
 
 .button:hover{
     background-color: #46757d;
-    color: white;
+    color: #dfd8ce;
 }
 
 
@@ -351,23 +359,38 @@ img{
 
 .contact_receiver{
     display: grid;
-    grid-template-columns: repeat (2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 1024px;
 }
 
-.opening_hours{
-        grid-column-start: 1;
+.openinghours_contact{
+grid-column: 1;
+    grid-row: 1;
+/*border: solid 1px black;*/
 }
-.number{
-        grid-column-start: 2;
+.number_contact{
+    grid-column: 2;
+    grid-row: 1;
+/*border: solid 1px black;*/
 }
-.cvr{
-        grid-column-start: 1;
+
+.cvr_contact{
+        grid-column: 1;
+    grid-row: 3;
+/*border: solid 1px black;*/
 }
-.address{
-    grid-column-start: 2;
+.address_contact{
+    grid-column: 2;
+    grid-row: 2;
+/*border: solid 1px black;*/
 }
-.email{
-    grid-column-start: 1;
+.email_contact{
+        grid-column: 1;
+    grid-row: 2;
+/*border: solid 1px black;*/
 }
 
 
