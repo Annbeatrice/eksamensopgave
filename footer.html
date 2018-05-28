@@ -1,40 +1,62 @@
-
-
 <section class="footer">
 
-    <div class="map"></div>
+	<div class="map"></div>
 
-    <div class="content_footer">
-        <a href="" class="link">
-            <img src="img/smiley.jpg" alt="">
+	<div class="content_footer">
+		<a href="https://www.facebook.com/Per-Bo-603393759720479/" class="link1">
+            <img src="img/facebook_groen.png" alt="Facebook logo">
         </a>
-        <a href="" class="link">
-            <img src="img/smiley.jpg" alt="">
+		<a href="https://www.instagram.com/per_bo/" class="link2">
+            <img src="img/insta_ring_groen.png" alt="Instagram logo">
         </a>
-        <a href="" class="link">
-            <img src="img/smiley.jpg" alt="">
+		<a href="http://www.findsmiley.dk/551758" class="link3">
+            <img src="img/foedevarestyrelsen_groen.png" alt="Smileyrapport butik">
         </a>
-        <a href="" class="link">
-            <img src="img/smiley.jpg" alt="">
+		<a href="http://www.findsmiley.dk/700294" class="link4">
+            <img src="img/foedevarestyrelsen_groen.png" alt="Smileyrapport engros">
         </a>
-        <a href="" class="link">
-            <img src="img/smiley.jpg" alt="">
+		<a href="" class="link5">
+            <img src="img/konvolut_ring_groen.png" alt="Tilmeld nyhedsbrev">
         </a>
-        <a href="" class="link">
-            <img src="img/smiley.jpg" alt="">
+		<a href="" class="link6">
+            <img src="img/cookie_ring_groen.png" alt="Cookie- og privatlivspolitik">
         </a>
-    </div>
+		<p>
+
+		</p>
+	</div>
 
 </section>
 
+<style>
+	.content_footer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1vw;
+	}
 
+	.link1,
+	.link3,
+	.link5 {
+		grid-column: 1/2;
 
-    <script src="footer.js"></script>
+	}
+
+	.link2,
+	.link4,
+	.link6 {
+		grid-column: 2/3;
+	}
+
+</style>
+
+<script src="footer.js"></script>
 
 <!--
     //när den här är loaded in kallar den på functionen innitmap
 -->
 
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL_Ih-tJnDNMcCvvYdN1tBeEMRY8yjwsE">
-    </script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL_Ih-tJnDNMcCvvYdN1tBeEMRY8yjwsE">
+
+
+</script>
