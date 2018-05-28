@@ -39,6 +39,34 @@
 			text-align: center;
 			line-height: 1.8;
 		}
+
+		.rapport {
+			max-width: 10vw;
+		}
+
+		.smiley_container {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-column-gap: 10px;
+		}
+
+		.smiley_butik {
+			grid-column: 2/3;
+			margin: 5vw;
+			text-align: center;
+		}
+
+		.smiley_engros {
+			grid-column: 3/4;
+			margin: 5vw;
+			text-align: center;
+		}
+
+		.smiley_butik img,
+		.smiley_engros img {
+			align-items: center;
+		}
+
 	</style>
 
 </head>
@@ -61,17 +89,20 @@
 	<section class="section_forside">
 
 		<cite><h3 class="quote">Jeg laver hverdagsting der er gode at have i hånden og smukke at se på. Jeg stræber efter ting, der har rod i keramisk tradition med rustikke former og abstrakte dekorationer.</h3> </cite>
-
-		<a href="http://www.findsmiley.dk/551758">
-			<h2>Butik</h2>
-			<img src="img/smiley1.png" alt="" class="rapport">
-		</a>
-
-		<a href="http://www.findsmiley.dk/700294">
-			<h2>Engros</h2>
-			<img src="img/smiley1.png" alt="" class="rapport">
-		</a>
-
+		<div class="smiley_container">
+			<div class="smiley_butik">
+				<a href="http://www.findsmiley.dk/551758">
+					<h2>Butik</h2>
+					<img src="img/foedevarestyrelsen_groen.png" alt="" class="rapport">
+				</a>
+			</div>
+			<div class="smiley_engros">
+				<a href="http://www.findsmiley.dk/700294">
+					<h2>Engros</h2>
+					<img src="img/foedevarestyrelsen_groen.png" alt="" class="rapport">
+				</a>
+			</div>
+		</div>
 		<div class="infographic">
 			<img src="" alt="" class="infographic_image">
 
@@ -100,6 +131,8 @@
 	<script src="header.js"></script>
 	<script src="footer.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL_Ih-tJnDNMcCvvYdN1tBeEMRY8yjwsE">
+
+
 	</script>
 
 </body>
