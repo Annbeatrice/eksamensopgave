@@ -99,7 +99,7 @@ img {
 	box-sizing: border-box;
 }
 
-body {
+.header_container {
 	margin: 0;
 	font-family: 'Playfair Display';
 }
@@ -428,6 +428,27 @@ body {
 
 /*****Footer*****/
 
+.content_footer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1vw;
+	align-self: center;
+}
+
+.link1,
+.link3,
+.link5 {
+	grid-column: 1/2;
+
+}
+
+.link2,
+.link4,
+.link6 {
+	grid-column: 2/3;
+}
+
+
 .footer {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -435,12 +456,6 @@ body {
 	background: #282828;
 	margin-top: 20px;
 }
-
-.content_footer {
-	align-self: center;
-}
-
-
 
 .content_footer img {
 	width: 20%;
