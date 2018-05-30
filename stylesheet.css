@@ -151,6 +151,7 @@ img {
 }
 
 
+
 @media screen and (min-width: 1024px) {
 	.section_button {
 		display: grid;
@@ -227,6 +228,7 @@ img {
 	.overlay a:focus {
 		color: #8bb27a;
 	}
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -630,29 +632,32 @@ closeBtn:focus {
 
 }
 
-.image_nyhed{
-    width: 30vw;
-    justify-self: center;
-    grid-column: 2;
+.image_nyhed {
+	width: 30vw;
+	justify-self: center;
+	grid-column: 2;
 }
 
-.receiver_news_single{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.receiver_news_single {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	grid-column: 2;
 	grid-row: 1 / 2;
 	width: 100%;
 	margin-top: 20px;
 }
-}
-.receiver_news_single h2{
-    grid-column-start: 1;
-    grid-row-start: 1;
-    justify-self: center;
-    align-self: center;
-    text-transform: uppercase;
 
 }
+
+.receiver_news_single h2 {
+	grid-column-start: 1;
+	grid-row-start: 1;
+	justify-self: center;
+	align-self: center;
+	text-transform: uppercase;
+
+}
+
 /******Nyhedsarkiv end*****/
 
 /******Kontakt*****/
@@ -792,5 +797,59 @@ closeBtn:focus {
 @media screen and (min-width: 812px) {
 	.content_footer {
 		max-width: 400px;
+	}
+}
+
+/**INFOGRAPHIC***/
+
+.infographic_wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: 4px;
+}
+
+@media screen and (min-width: 768px) {
+	.infographic_wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 4px;
+	}
+
+	.img4 {
+		grid-column: 1;
+		grid-row: 1;
+		align-self: end;
+		justify-self: end;
+	}
+
+	.img1 {
+		grid-column: 2;
+		grid-row: 1;
+		align-self: end;
+		justify-self: start;
+	}
+
+	.img3 {
+		grid-column: 1;
+		grid-row: 2;
+		align-self: start;
+		justify-self: end;
+	}
+
+	.img2 {
+		grid-column: 2;
+		grid-row: 2;
+		align-self: start;
+		justify-self: start;
+
+	}
+
+
+}
+
+@media screen and (min-width: 1025px) {
+	/* Hide Play button + controls on iOS */
+	video::-webkit-media-controls {
+		display: none !important;
 	}
 }
