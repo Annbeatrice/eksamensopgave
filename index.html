@@ -14,64 +14,6 @@
 
 	<link rel="stylesheet" href="stylesheet.css">
 
-	<style>
-		* {
-			box-sizing: border-box;
-		}
-
-		body {
-			margin: 0;
-			font-family: 'Playfair Display';
-			/*font-size: 17px;*/
-		}
-
-		.bg_video {
-			position: sticky;
-			right: 0;
-			bottom: 0;
-			width: 98.792vw;
-
-		}
-
-		/*.slogan { position: sticky; bottom: 30vw; background: rgba(0, 0, 0, 0.5); color: #dfd8ce; width: 100%; padding: 20px; } .slogan h2 { text-align: center; }*/
-
-		.quote {
-			margin: 2vh 15vw;
-			text-align: center;
-			line-height: 1.8;
-		}
-
-		.rapport {
-			max-width: 10vw;
-		}
-
-		.smiley_container {
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			grid-column-gap: 10px;
-		}
-
-		.smiley_butik {
-			grid-column: 2/3;
-			margin: 5vw;
-			text-align: center;
-		}
-
-		.smiley_engros {
-			grid-column: 3/4;
-			margin: 5vw;
-			text-align: center;
-		}
-
-		.smiley_tekst [ grid-column: 4/5;
-		margin: 5vw;
-		text-align: center;
-		] .smiley_butik img,
-		.smiley_engros img {
-			align-items: center;
-		}
-	</style>
-
 </head>
 <style>
 	.infographic_wrapper {
@@ -121,74 +63,61 @@
 	<section class="section_top">
 
 		<video autoplay muted loop class="bg_video">
- 		<source src="/img/bg_video_banner_slow.mp4" type="video/mp4">
+ 		<source src="/img/bg_video_banner2.mp4" type="video/mp4">
 		 Your browser does not support HTML5 video.
 		</video>
-		<!--<div class="slogan">
-	<h2>Uanset hvem du er</h2>
-</div>-->
 
 	</section>
 
 	<section class="section_forside">
+
+		<cite>
+
 		<h3 class="quote">Jeg laver hverdagsting der er gode at have i hånden og smukke at se på. Jeg stræber efter ting, der har rod i keramisk tradition med rustikke former og abstrakte dekorationer.</h3>
-		<div class="smiley_container">
-			<div class="smiley_butik">
-				<a href="http://www.findsmiley.dk/551758">
-					<h3>Butik</h3>
-					<img src="img/foedevarestyrelsen_groen.png" alt="" class="rapport">
-				</a>
-			</div>
-			<div class="smiley_engros">
-				<a href="http://www.findsmiley.dk/700294">
-					<h3>Engros</h3>
-					<img src="img/foedevarestyrelsen_groen.png" alt="" class="rapport">
-				</a>
-			</div>
+</cite>
 
-			<!--<div class="smiley_tekst">
-	<h4>Miljø- og Fødevareministeriet</h4>
-	<p>"GMP procedurer i forhold til produktion af stentøj, herunder indhentning af dokumentation, brændetemperatur og kontrol af ovntemperatur. Set overenstemmelseserklæring med angivelse af relevant lovgivning og angivelse af at der ikke er tilsat bly og cadmium. Virksomheden oplyser iøvrigt ikke at benytte råvarer med bly og cadmium."</p>
-</div>-->
-		</div>
 
-		<section class="infographic_wrapper">
+		<div class="infographic">
+			<img src="" alt="" class="infographic_image">
 
-			<div class="infographic img1" data-img1>
-				<video width="auto" height="250" controls>
+
+			<section class="infographic_wrapper">
+
+				<div class="infographic img1" data-img1>
+					<video width="auto" height="250" controls>
   				<source src="infographic/ler_info.mp4" type="video/mp4">
 				Your browser does not support the video tag.
 				</video>
 
-			</div>
+				</div>
 
-			<div class="infographic img2" data-img2>
-				<video width="auto" height="250" controls>
+				<div class="infographic img2" data-img2>
+					<video width="auto" height="250" controls>
   				<source src="infographic/ubraendt_info.mp4" type="video/mp4">
 				Your browser does not support the video tag.
 				</video>
 
-			</div>
+				</div>
 
-			<div class="infographic img3" data-img3>
-				<video width="auto" height="250" controls>
+				<div class="infographic img3" data-img3>
+					<video width="auto" height="250" controls>
   				<source src="infographic/tallerken_info.mp4" type="video/mp4">
 				Your browser does not support the video tag.
 				</video>
 
-			</div>
+				</div>
 
-			<div class="infographic img4" data-img4>
-				<video width="auto" height="250" controls>
+				<div class="infographic img4" data-img4>
+					<video width="auto" height="250" controls>
   				<source src="infographic/crossaint_info.mp4" type="video/mp4">
 				Your browser does not support the video tag.
 				</video>
 
-			</div>
+				</div>
 
-		</section>
+			</section>
 
-
+		</div>
 
 	</section>
 	<footer id="footer" class="footer_grid" data-footer></footer>

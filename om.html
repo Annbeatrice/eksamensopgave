@@ -2,68 +2,148 @@
 <html lang="">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
 
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/icon/android-chrome-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/icon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/icon/favicon-16x16.png">
-	<link rel="manifest" href="favicon/icon/manifest.json">
-	<link rel="mask-icon" href="favicon/icon/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/icon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/icon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/icon/manifest.json">
+    <link rel="mask-icon" href="favicon/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
 
-	<link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        .receiver_om {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 20px;
+            margin: 0 auto;
+            max-width: 1024px;
+        }
+
+        .text_om,
+        .image_om,
+        .about_clients {
+            border: solid 1px black;
+        }
+
+        textarea.engro,
+        .restaurant {
+            text-align: center;
+            outline: none;
+            height: 60px;
+        }
+
+        .receiver_om h2,
+        h3 {
+            text-align: center;
+        }
+
+
+        @media screen and (min-width: 1025px) {
+            .receiver_om {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 20px;
+                margin: 0 auto;
+            }
+            .text_om {
+                grid-column: 1;
+                grid-row: 2;
+            }
+            .image_om {
+                grid-column: 2;
+                grid-row: 2;
+            }
+            .receiver_om h1 {
+                grid-column: 1/span 2;
+                grid-row: 1;
+            }
+
+            .receiver_om h2 {
+                grid-column: 1/span 2;
+                grid-row: 3;
+            }
+            .en_h3 {
+                grid-column: 1;
+                grid-row: 5;
+            }
+            .re_h3 {
+                grid-column: 2;
+                grid-row: 5;
+            }
+            .about_clients {
+                grid-column: 1/span 2;
+                grid-row: 4;
+                text-align: center;
+            }
+
+            textarea.restaurant {
+                grid-template-columns: 2;
+                height: 100px;
+                grid-row: 6;
+            }
+            textarea.engro {
+                grid-template-columns: 1;
+                height: 100px;
+                grid-row: 6;
+            }
+            .section_om {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 20px;
+                margin: 0 auto;
+            }
+    </style>
 </head>
 
 <body>
-	<header id="header" data-header>
+    <header id="header" data-header>
 
-	</header>
-	<div data-receiver></div>
-	<template data-template-om>
-        <h1>Om Per Bo</h1>
+    </header>
+    <div class="receiver_om" data-receiver></div>
+    <template data-template-om>
+        <h1>Per Bo</h1>
            <div class="border"></div>
         <div class="text_om" data-text-om>
         </div>
         <img src="" alt="" class="image_om" data-image-om>
         <h2>Erhvervskunder</h2>
         <div class="about_clients" data-about-clients></div>
-        <h3>Engro</h3>
-        <div class="list_clients" data-engrolist-clients></div>
-        <h3>Restauranger</h3>
-        <div class="list_clients" data-restaurantlist-clients></div>
 
-   </template>
+       <h3 class="en_h3">Engro</h3>
+        <textarea name="Engro" class="engro" class="list_clients" data-engrolist-clients>
+            </textarea>
 
-	<section class="section_om">
-		<div class="video_items">
-			<!--            video class="mini_video"-->
-			<span class="video_description"></span>
-		</div>
+<h3 class="re_h3">Restauranger</h3>
+        <textarea name="Restauranger" class="restaurant" class="list_restaurant" data-restaurantlist-clients></textarea>
 
-		<div class="video_items">
-			<!--            video class="mini_video"-->
-			<span class="video_description"></span>
-		</div>
+         </template>
 
-		<div class="video_items">
-			<!--            video class="mini_video"-->
-			<span class="video_description"></span>
-		</div>
+    <div class="video_receiver_om" data-video-receiver></div>
+    <template data-template-video>
+    <section class="section_om">
+        <div class="video_items">
+            <h3 class="om_item_title" data-om-title></h3>
+            <iframe width="420" height="345" src="" data-om-video class="om_video">
+</iframe>
 
-		<div class="video_items">
-			<!--            video class="mini_video"-->
-			<span class="video_description"></span>
-		</div>
+            <span class="video_description"></span>
+        </div>
 
-	</section>
-	<footer id="footer" class="footer_grid" data-footer></footer>
-	<script src="om.js"></script>
-	<script src="header.js"></script>
-	<script src="footer.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL_Ih-tJnDNMcCvvYdN1tBeEMRY8yjwsE">
-	</script>
+    </section>
+
+         </template>
+
+
+    <footer id="footer" class="footer_grid" data-footer></footer>
+    <script src="om.js"></script>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL_Ih-tJnDNMcCvvYdN1tBeEMRY8yjwsE">
+    </script>
 </body>
 
 </html>
