@@ -2,20 +2,27 @@ body {
     margin: 0;
 }
 
+/*********** header *****************/
 
 .header_container {
+
     display: grid;
     grid-template-columns: 30% 70%;
-
 }
-
 
 .header_wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin: 40px;
-}
+    margin: 0px;
+    grid-column: 2/3;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: block;
 
+}
 
 .header_wrapper a {
     /*    border: solid 1px black;*/
@@ -24,12 +31,79 @@ body {
 .logo {
     grid-column: 1;
     grid-row: 1;
-
+    margin: 1vw;
 }
 
 .logo img {
-    width: 50%;
+    max-width: 20vw;
+    margin: 1vw;
 }
+
+.bg_video {
+    position: sticky;
+    right: 0;
+    bottom: 0;
+    width: 98.792vw;
+}
+
+/********** nav ***********/
+
+.overlay {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #282828;
+    display: block;
+    transition: 0.3s;
+    color: white;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: white;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+
+}
+
+/********** nav end ***********/
+
+/********** burger ***********/
+
+.burger {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    font-size: 32px;
+    cursor: pointer;
+    background: #282828;
+    width: 100vw;
+    padding-left: 2vw;
+    padding-bottom: 1vh;
+}
+
+/********** burger end ***********/
+
+/******************* header end *********/
 
 a {
     text-decoration: none;
@@ -40,6 +114,10 @@ a {
 h1 {
     text-align: center;
     font-family: 'Playfair Display', serif;
+}
+
+h3 {
+    font-weight: 100;
 }
 
 /*
@@ -57,9 +135,6 @@ img {
     width: 100%;
     /*    height: 350px;*/
 }
-
-
-
 
 .section_button {
     display: grid;
@@ -109,27 +184,61 @@ img {
 }
 
 
-/************  Header  ************/
+/********* header desktop ********/
+
+
+@media screen and (min-width: 812px) {
+    .burger {
+        display: none;
+    }
+    .overlay {
+        bottom: auto;
+        height: 95%;
+        max-height: 120px;
+        max-width: 99vw;
+        overflow-y: initial;
+        left: 44vw;
+        right: 0;
+        text-align: right;
+        background: linear-gradient(to left, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 0) 100%);
+    }
+    .overlay a {
+        font-size: 1.2rem;
+        color: #282828;
+    }
+    .header_wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 55vw;
+        top: 51px;
+    }
+    .overlay .closebtn {
+        display: none;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #8bb27a;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header_wrapper {
+        top: 40px;
+    }
+    .logo img {
+        max-width: 12vw;
+    }
+
+}
+
+/************* index / forside **************/
 
 #header {
     box-sizing: border-box;
 }
-
-body {
-    margin: 0;
-    font-family: 'Playfair Display';
-}
-
-.bg_video {
-    position: sticky;
-    right: 0;
-    bottom: 0;
-    width: 98.792vw;
-}
-
-/************Header end************/
-
-/************* index / forside **************/
 
 .quote {
     margin: 2vh 15vw;
@@ -410,7 +519,6 @@ body {
 
 /*************Webshop single end************/
 
-
 /*************Videogalleri************/
 
 .gallery_item_receiver{
@@ -517,11 +625,14 @@ width: 85vw;
 
 /******Kontakt*****/
 
+=======
+>>>>>>> master/master
 .contact_receiver {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
     margin: 0 auto;
+    margin-left: 25%;
     padding: 2em;
     justify-items: center;
 }
@@ -530,35 +641,30 @@ width: 85vw;
 .openinghours_contact {
     grid-column: ;
     grid-row: 1;
-    border: solid 1px black;
     width: 100%;
 }
 
 .number_contact {
     grid-column: 1;
     grid-row: 3;
-    border: solid 1px black;
     width: 100%;
 }
 
 .cvr_contact {
     grid-column: 1;
     grid-row: 5;
-    border: solid 1px black;
     width: 100%;
 }
 
 .address_contact {
     grid-column: 1;
     grid-row: 2;
-    border: solid 1px black;
     width: 100%;
 }
 
 .email_contact {
     grid-column: 1;
     grid-row: 4;
-    border: solid 1px black;
     width: 100%;
 }
 
@@ -569,41 +675,37 @@ width: 85vw;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
         margin: 0 auto;
+        margin-left: 25%;
         padding: 2em;
         justify-items: center;
     }
     .openinghours_contact {
         grid-column: 1;
         grid-row: 1;
-        border: solid 1px black;
         width: 100%;
     }
 
     .number_contact {
         grid-column: 1;
         grid-row: 2;
-        border: solid 1px black;
         width: 100%;
     }
 
     .cvr_contact {
         grid-column: 1;
         grid-row: 3;
-        border: solid 1px black;
         width: 100%;
     }
 
     .address_contact {
         grid-column: 2;
         grid-row: 1;
-        border: solid 1px black;
         width: 100%;
     }
 
     .email_contact {
         grid-column: 2;
         grid-row: 2;
-        border: solid 1px black;
         width: 100%;
     }
 }
@@ -611,6 +713,7 @@ width: 85vw;
 /*****Footer*****/
 
 .footer {
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
@@ -622,8 +725,6 @@ width: 85vw;
     align-self: center;
 }
 
-
-
 .content_footer img {
     width: 20%;
 }
@@ -633,4 +734,33 @@ width: 85vw;
     height: 400px;
     justify-self: center;
     align-self: center;
+}
+
+.content_footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3vw;
+    margin-bottom: 6vh;
+    margin-top: 3vh;
+}
+
+.link1,
+.link3,
+.link5 {
+    grid-column: 1/2;
+    text-align: right;
+    color: white;
+}
+
+.link2,
+.link4,
+.link6 {
+    grid-column: 2/3;
+    color: white;
+}
+
+@media screen and (min-width: 812px) {
+    .content_footer {
+        max-width: 400px;
+    }
 }

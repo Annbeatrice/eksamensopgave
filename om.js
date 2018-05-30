@@ -1,14 +1,22 @@
+//video variation
+
+let videoReceiver = document.querySelector("[data-video-receiver]");
+let videoTemplate = document.querySelector("[data-template-video]");
+
+let videos = [];
+let videosnye;
+
+//Om template
+
 /* definera mottagaren*/
 
 let receiver = document.querySelector("[data-receiver]");
-let videosOm;
-let videos;
-
 let om;
 
 /* definera templaten */
 
 let template = document.querySelector("[data-template-om]");
+
 
 /* klona template */
 
@@ -44,35 +52,46 @@ function showOm() {
     let img = template_clone.querySelector("[data-image-om]");
     console.log(om.acf)
 
-
     template_clone.querySelector("[data-text-om]").innerHTML = om.acf.about;
     img.src = om.acf.image;
     template_clone.querySelector("[data-about-clients]").innerHTML = om.acf.about;
-    template_clone.querySelector("[data-engrolist-clients]").innerHTML = om.acf.engro_list;
-    template_clone.querySelector("[data-restaurantlist-clients]").innerHTML = om.acf.engro_list;
+    template_clone.querySelector("[data-engrolist-clients]").textContent = om.acf.engro_list;
+    template_clone.querySelector("[data-restaurantlist-clients]").textContent = om.acf.restaurent_list;
 
     receiver.appendChild(template_clone);
 }
 
-/* get video */
+
+/*  Video template */
 
 async function videoJson() {
     let jsonElement = await fetch("http://josefinerasch.dk/kea/08-eksamensprojekt/wordpress/wp-json/wp/v2/youtube_video");
 
-    videosOm = await jsonElement.json();
-    showVideosOm();
+    videos = await jsonElement.json();
+    showVideos();
 
 }
 
 
-function showVideosOm() {
-    videosOm.forEach((v) => {
+function showVideos() {
+    videos.forEach((v) => {
+        if (v.acf.kategori == "omvideoer") {
+            let video_clone = videoTemplate.cloneNode(true).content;
+            video_clone.querySelector("[data-om-video]").src = v.acf.link;
+            video_clone.querySelector("[data-om-title]").innerHTML = v.title.rendered;
 
-        if (v.id == 137 ||  v.id == 131 ||  v.id == 133 || v.id == 130) {
-            document.querySelector("[data-om-title]").innerHTML = v.title.rendered;
-            document.querySelector("[data-om-video]").src = v.acf.link;
-            console.log(v.id);
-
+            videoReceiver.appendChild(video_clone);
         }
     });
 }
+
+
+// videosOm.forEach((v) => {
+//
+//        if (v.id == 137 ||  v.id == 131 ||  v.id == 133 || v.id == 130) {
+//            document.querySelector("[data-om-title]").innerHTML = v.title.rendered;
+//            document.querySelector("[data-om-video]").src = v.acf.link;
+//            console.log(v.id);
+//
+//        }
+//    });
