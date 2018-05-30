@@ -21,6 +21,17 @@
             grid-gap: 20px;
             margin: 0 auto;
             max-width: 1024px;
+            padding: 25px;
+
+        }
+
+        .video_receiver_om {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 20px;
+            margin: 0 auto;
+            max-width: 1024px;
+            padding: 25px;
         }
 
         .text_om,
@@ -34,6 +45,7 @@
             text-align: center;
             outline: none;
             height: 60px;
+
         }
 
         .receiver_om h2,
@@ -41,14 +53,22 @@
             text-align: center;
         }
 
+        .text_om,
+
+        .about_clients,
+            {
+            justify-self: center;
+        }
+
 
         @media screen and (min-width: 1025px) {
             .receiver_om {
-                display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                grid-gap: 20px;
-                margin: 0 auto;
             }
+            .video_receiver_om {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
             .text_om {
                 grid-column: 1;
                 grid-row: 2;
@@ -96,6 +116,7 @@
                 grid-gap: 20px;
                 margin: 0 auto;
             }
+
     </style>
 </head>
 
@@ -143,6 +164,8 @@
     <script src="header.js"></script>
     <script src="footer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL_Ih-tJnDNMcCvvYdN1tBeEMRY8yjwsE">
+
+
     </script>
 </body>
 
