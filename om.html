@@ -41,6 +41,7 @@
             height: 60px;
             border: none;
             margin: 10px;
+            font-family: 'acumin pro';
         }
 
         textarea {
@@ -59,13 +60,22 @@
             justify-self: center;
         }
 
+        .om_video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .om_item_title {
+            border-bottom: solid 1px rgba(70, 117, 125, 0.35);
+        }
+
 
         @media screen and (min-width: 1025px) {
             .receiver_om {
                 grid-template-columns: repeat(2, 1fr);
             }
             .video_receiver_om {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(4, 1fr);
             }
 
             .text_om {
@@ -109,11 +119,8 @@
                 height: 100px;
                 grid-row: 6;
             }
-            .section_om {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-gap: 20px;
-                margin: 0 auto;
+            .video_items {
+                grid-template-columns: 1;
             }
 
     </style>
