@@ -22,6 +22,7 @@ function showNyhedsarkiv(){
 
         let template_clone = template.cloneNode(true).content;
 
+        template_clone.querySelector("[data-item-link]").href = "/nyhedsarkiv_single.html?id=" + nyhed.id;
         template_clone.querySelector("[data-news-title]").innerHTML = nyhed.title.rendered;
         template_clone.querySelector("[data-text-box]").innerHTML = nyhed.acf.newsletter_date;
         template_clone.querySelector("[data-news-image]").src = nyhed.acf.newsletter_img.sizes.medium;
