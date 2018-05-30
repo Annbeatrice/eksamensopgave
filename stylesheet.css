@@ -630,21 +630,29 @@ closeBtn:focus {
 
 }
 
-.newsletter_image {
+.image_nyhed{
+    width: 30vw;
+    justify-self: center;
+    grid-column: 2;
+}
 
+.receiver_news_single{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 	grid-column: 2;
 	grid-row: 1 / 2;
 	width: 100%;
 	margin-top: 20px;
 }
-
-.image_nyhed {
-	width: 30vw;
-	margin: 0 auto;
-	max-width: 1024px;
+}
+.receiver_news_single h2{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    justify-self: center;
+    align-self: center;
+    text-transform: uppercase;
 
 }
-
 /******Nyhedsarkiv end*****/
 
 /******Kontakt*****/
