@@ -608,14 +608,24 @@ width: 85vw;
     margin-top: 20px;
 }
 
-
-
 .image_nyhed{
     width: 30vw;
-    margin: 0 auto;
-    max-width: 1024px;
+    justify-self: center;
+    grid-column: 2;
 }
 
+.receiver_news_single{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.receiver_news_single h2{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    justify-self: center;
+    align-self: center;
+    text-transform: uppercase;
+
+}
 /******Nyhedsarkiv end*****/
 
 
