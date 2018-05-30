@@ -1,87 +1,91 @@
 body {
-    margin: 0;
+
+	margin: 0;
+
 }
 
 /*********** header *****************/
 
 .header_container {
-
-    display: grid;
-    grid-template-columns: 30% 70%;
+	display: grid;
+	grid-template-columns: 30% 70%;
 }
 
 .header_wrapper {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin: 0px;
-    grid-column: 2/3;
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    display: block;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	margin: 0px;
+	grid-column: 2/3;
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	display: block;
+
 
 }
 
 .header_wrapper a {
-    /*    border: solid 1px black;*/
+
+	/*    border: solid 1px black;*/
 }
 
 .logo {
-    grid-column: 1;
-    grid-row: 1;
-    margin: 1vw;
+	grid-column: 1;
+	grid-row: 1;
+	margin: 1vw;
 }
 
 .logo img {
-    max-width: 20vw;
-    margin: 1vw;
+	max-width: 20vw;
+	margin: 1vw;
 }
 
 .bg_video {
-    position: sticky;
-    right: 0;
-    bottom: 0;
-    width: 98.792vw;
+	position: sticky;
+	right: 0;
+	bottom: 0;
+	width: 98.792vw;
 }
+
 
 /********** nav ***********/
 
 .overlay {
-    height: 0%;
-    width: 100vw;
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
-    overflow-y: hidden;
-    transition: 0.5s;
+	height: 0%;
+	width: 100vw;
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.9);
+	overflow-y: hidden;
+	transition: 0.5s;
 }
 
 
 .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #282828;
-    display: block;
-    transition: 0.3s;
-    color: white;
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #282828;
+	display: block;
+	transition: 0.3s;
+	color: white;
 }
 
 .overlay a:hover,
 .overlay a:focus {
-    color: white;
+	color: white;
 }
 
 .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
 
 }
 
@@ -90,15 +94,15 @@ body {
 /********** burger ***********/
 
 .burger {
-    position: fixed;
-    bottom: 0;
-    z-index: 100;
-    font-size: 32px;
-    cursor: pointer;
-    background: #282828;
-    width: 100vw;
-    padding-left: 2vw;
-    padding-bottom: 1vh;
+	position: fixed;
+	bottom: 0;
+	z-index: 100;
+	font-size: 32px;
+	cursor: pointer;
+	background: #282828;
+	width: 100vw;
+	padding-left: 2vw;
+	padding-bottom: 1vh;
 }
 
 /********** burger end ***********/
@@ -106,18 +110,19 @@ body {
 /******************* header end *********/
 
 a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Playfair Display', serif;
+	text-decoration: none;
+	color: black;
+	font-family: 'Playfair Display', serif;
 }
 
 h1 {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+
 }
 
 h3 {
-    font-weight: 100;
+	font-weight: 100;
 }
 
 /*
@@ -132,11 +137,17 @@ h3 {
 */
 
 img {
-    width: 100%;
-    /*    height: 350px;*/
+
+	width: 100%;
+	/*    height: 350px;*/
 }
 
 .section_button {
+<<<<<<< HEAD
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin: 5vw 0 2vw 0;
+=======
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin: 3vw 0 2vw 0;
@@ -154,32 +165,34 @@ img {
         }
 
 
+>>>>>>> origin/master
 }
 
 .button {
-    margin: 1vw;
-    border: solid 1px rgba(70, 117, 125, 0.17);
-    padding: 1vw;
-    transition: background-color 0.7s ease;
+	margin: 1vw;
+	border: solid 1px rgba(70, 117, 125, 0.17);
+	padding: 1vw;
+	transition: background-color 0.7s ease;
 }
 
 .button:hover {
-    background-color: #46757d;
-    color: #dfd8ce;
+	background-color: #46757d;
+	color: #dfd8ce;
+
 }
 
 
 .button_buy {
-    background: #46757d;
-    color: white;
-    letter-spacing: 2px;
-    padding: 10px 80px;
-    transition: transform .2s;
+	background: #46757d;
+	color: white;
+	letter-spacing: 2px;
+	padding: 10px 80px;
+	transition: transform .2s;
 }
 
 .button_buy:hover {
-    transform: scale(1.03);
-    box-shadow: 0 1px 8px rgba(0, 0, 0, .2);
+	transform: scale(1.03);
+	box-shadow: 0 1px 8px rgba(0, 0, 0, .2);
 
 }
 
@@ -188,62 +201,62 @@ img {
 
 
 @media screen and (min-width: 812px) {
-    .burger {
-        display: none;
-    }
-    .overlay {
-        bottom: auto;
-        height: 95%;
-        max-height: 120px;
-        max-width: 99vw;
-        overflow-y: initial;
-        left: 44vw;
-        right: 0;
-        text-align: right;
-        background: linear-gradient(to left, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 0) 100%);
-    }
-    .overlay a {
-        font-size: 1.2rem;
-        color: #282828;
-    }
-    .header_wrapper {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        text-align: center;
-        width: 55vw;
-        top: 51px;
-    }
-    .overlay .closebtn {
-        display: none;
-    }
+	.burger {
+		display: none;
+	}
+	.overlay {
+		bottom: auto;
+		height: 95%;
+		max-height: 120px;
+		max-width: 99vw;
+		overflow-y: initial;
+		left: 44vw;
+		right: 0;
+		text-align: right;
+		background: linear-gradient(to left, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 0) 100%);
+	}
+	.overlay a {
+		font-size: 1.2rem;
+		color: #282828;
+	}
+	.header_wrapper {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-evenly;
+		text-align: center;
+		width: 55vw;
+		top: 51px;
+	}
+	.overlay .closebtn {
+		display: none;
+	}
 
-    .overlay a:hover,
-    .overlay a:focus {
-        color: #8bb27a;
-    }
+	.overlay a:hover,
+	.overlay a:focus {
+		color: #8bb27a;
+	}
 }
 
 @media screen and (min-width: 1024px) {
-    .header_wrapper {
-        top: 40px;
-    }
-    .logo img {
-        max-width: 12vw;
-    }
+	.header_wrapper {
+		top: 40px;
+	}
+	.logo img {
+		max-width: 12vw;
+	}
 
 }
 
 /************* index / forside **************/
 
 #header {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .quote {
-    margin: 2vh 15vw;
-    text-align: center;
-    line-height: 1.8;
+	margin: 2vh 15vw;
+	text-align: center;
+	line-height: 1.8;
 }
 
 /************* index / forside end **************/
@@ -251,95 +264,123 @@ img {
 /*************  Slider  ************/
 
 .slider img {
-    width: 100%;
+
+	width: 100%;
+
 
 }
 
 .slider {
-    position: relative;
-    margin: 0 auto;
-    padding-top: 20px;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 20px;
 }
 
 .slides {
-    display: none;
+
+	display: none;
+
 }
 
 .prev,
 .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 28px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 28px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
 }
 
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+	right: 0;
+	border-radius: 3px 0 0 3px;
 }
 
 .prev:hover .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 .slider_dots {
-    text-align: center;
+	text-align: center;
 }
 
 .dot {
-    cursor: pointer;
-    height: 12px;
-    width: 12px;
-    margin: 0 2px;
-    background-color: white;
-    border: solid 1px rgba(128, 128, 128, 0.65);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+	cursor: pointer;
+	height: 12px;
+	width: 12px;
+	margin: 0 2px;
+	background-color: white;
+	border: solid 1px rgba(128, 128, 128, 0.65);
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+
 }
 
 
 .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
+
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
 }
 
 @keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+
 }
 
 .active,
 .dot:hover {
-    background-color: rgba(70, 117, 125, 0.51);
+
+	background-color: rgba(70, 117, 125, 0.51);
+
 }
 
 /************Slider End************/
 
 /************Webshop************/
 
+<<<<<<< HEAD
+.receiver_webshop {
+
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 20px;
+	margin: 0 auto;
+	max-width: 1024px;
+}
+
+@media screen and (min-width: 1025px) {
+	.receiver_webshop {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 20px;
+		margin: 0 auto;
+	}
+
+=======
 
 /************Webshop modal *******/
 
@@ -414,48 +455,56 @@ img {
     margin: 0 auto;
         max-width: 1024px;
         }
+>>>>>>> origin/master
 
 
 }
 
 .webshop_item {
-    display: grid;
-    grid-template-columns: repeat (2, 1fr);
+
+	display: grid;
+	grid-template-columns: repeat (2, 1fr);
+
 
 
 }
 
 .item {
-    display: grid;
-    min-height: 150px;
-    grid-gap: 10px;
+	display: grid;
+	min-height: 150px;
+	grid-gap: 10px;
 
 
 }
 
 .item_image {
-    width: 100%;
-    grid-row: 1;
-    grid-column-start: 1;
-    grid-column-end: 3;
+
+	width: 100%;
+	grid-row: 1;
+	grid-column-start: 1;
+	grid-column-end: 3;
 
 }
 
 .item_title {
-    grid-row: 2;
+
+	grid-row: 2;
 }
 
 .receiver_webshop .price {
-    grid-column: 1;
-    grid-row: 3;
+	grid-column: 1;
+	grid-row: 3;
+
 
 }
 
 .webshop_item .button_buy {
-    grid-column: 1;
-    grid-row: 2;
-    justify-self: end;
-    padding: 10px 40px;
+
+	grid-column: 1;
+	grid-row: 2;
+	justify-self: end;
+	padding: 10px 40px;
+
 }
 
 
@@ -465,6 +514,16 @@ img {
 /************webshop single************/
 
 .product {
+<<<<<<< HEAD
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+	margin: 0 auto;
+	max-width: 1024px;
+	margin-top: 30px;
+	padding: 10px;
+=======
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
@@ -472,50 +531,65 @@ img {
     max-width: 1024px;
     margin-top: 30px;
     padding: 10px;
+>>>>>>> origin/master
 
 }
 
 .title {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    justify-self: center;
-    text-transform: uppercase;
+
+	grid-column-start: 2;
+	grid-row-start: 1;
+	justify-self: center;
+	text-transform: uppercase;
+
 
 }
 
 .product img {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    width: 100%;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, .4);
-    border-radius: 3px;
+
+	grid-column-start: 1;
+	grid-row-start: 1;
+	width: 100%;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, .4);
+	border-radius: 3px;
 
 }
 
 .product_description {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    align-self: center;
-    padding: 40px;
+	grid-column-start: 2;
+	grid-row-start: 1;
+	align-self: center;
+	padding: 40px;
 
 }
 
 .product .price {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    align-self: end;
-    padding: 40px;
+	grid-column-start: 2;
+	grid-row-start: 1;
+	align-self: end;
+	padding: 40px;
 
 }
 
 .product .button_buy {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    align-self: end;
-    justify-self: end;
+	grid-column-start: 2;
+	grid-row-start: 1;
+	align-self: end;
+	justify-self: end;
 
-    margin: 40px;
+
 }
+
+
+.product .button_buy {
+	grid-column-start: 2;
+	grid-row-start: 1;
+	align-self: end;
+	justify-self: end;
+
+	margin: 40px;
+}
+
 
 /*************Webshop single end************/
 
@@ -568,16 +642,42 @@ width: 85vw;
 
 /******Nyhedsarkiv*****/
 
+<<<<<<< HEAD
+.receiver_nyhedsarkiv {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	margin: 0 auto;
+	max-width: 1024px;
+=======
 
 .receiver_nyhedsarkiv {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin: 0 auto;
     max-width: 1024px;
+>>>>>>> origin/master
 
 }
 
 .nyhed {
+<<<<<<< HEAD
+	display: grid;
+	grid-template-columns: 40% 60%;
+	border: solid 1px black;
+	margin: 10px;
+}
+
+.newsletter_title {
+	grid-column-start: 1;
+	align-self: center;
+	justify-self: center;
+}
+
+.text_box {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	align-self: center;
+=======
     display: grid;
     grid-template-columns: 40% 60%;
     border-bottom: solid 1px rgba(70, 117, 125, 0.35);
@@ -598,10 +698,16 @@ width: 85vw;
     justify-self: end;
     margin: 20px;
 
+>>>>>>> origin/master
 
 }
 
 .newsletter_image {
+<<<<<<< HEAD
+	grid-column: 2;
+	grid-row: 1 / 2;
+	width: 100%;
+=======
     grid-column: 2;
     grid-row: 1 / 2;
     width: 100%;
@@ -614,10 +720,15 @@ width: 85vw;
     width: 30vw;
     margin: 0 auto;
     max-width: 1024px;
+>>>>>>> origin/master
 }
 
 /******Nyhedsarkiv end*****/
 
+<<<<<<< HEAD
+/******Kontakt*****/
+
+=======
 
 
 
@@ -627,140 +738,141 @@ width: 85vw;
 
 =======
 >>>>>>> master/master
+>>>>>>> origin/master
 .contact_receiver {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-    margin: 0 auto;
-    margin-left: 25%;
-    padding: 2em;
-    justify-items: center;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 10px;
+	margin: 0 auto;
+	margin-left: 25%;
+	padding: 2em;
+	justify-items: center;
 }
 
 
 .openinghours_contact {
-    grid-column: ;
-    grid-row: 1;
-    width: 100%;
+	grid-column: ;
+	grid-row: 1;
+	width: 100%;
 }
 
 .number_contact {
-    grid-column: 1;
-    grid-row: 3;
-    width: 100%;
+	grid-column: 1;
+	grid-row: 3;
+	width: 100%;
 }
 
 .cvr_contact {
-    grid-column: 1;
-    grid-row: 5;
-    width: 100%;
+	grid-column: 1;
+	grid-row: 5;
+	width: 100%;
 }
 
 .address_contact {
-    grid-column: 1;
-    grid-row: 2;
-    width: 100%;
+	grid-column: 1;
+	grid-row: 2;
+	width: 100%;
+
 }
 
 .email_contact {
-    grid-column: 1;
-    grid-row: 4;
-    width: 100%;
+	grid-column: 1;
+	grid-row: 4;
+	width: 100%;
 }
 
 
 @media only screen and (min-width: 600px) {
-    .contact_receiver {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
-        margin: 0 auto;
-        margin-left: 25%;
-        padding: 2em;
-        justify-items: center;
-    }
-    .openinghours_contact {
-        grid-column: 1;
-        grid-row: 1;
-        width: 100%;
-    }
+	.contact_receiver {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+		margin: 0 auto;
+		margin-left: 25%;
+		padding: 2em;
+		justify-items: center;
+	}
+	.openinghours_contact {
+		grid-column: 1;
+		grid-row: 1;
+		width: 100%;
+	}
 
-    .number_contact {
-        grid-column: 1;
-        grid-row: 2;
-        width: 100%;
-    }
+	.number_contact {
+		grid-column: 1;
+		grid-row: 2;
+		width: 100%;
+	}
 
-    .cvr_contact {
-        grid-column: 1;
-        grid-row: 3;
-        width: 100%;
-    }
+	.cvr_contact {
+		grid-column: 1;
+		grid-row: 3;
+		width: 100%;
+	}
 
-    .address_contact {
-        grid-column: 2;
-        grid-row: 1;
-        width: 100%;
-    }
+	.address_contact {
+		grid-column: 2;
+		grid-row: 1;
+		width: 100%;
+	}
 
-    .email_contact {
-        grid-column: 2;
-        grid-row: 2;
-        width: 100%;
-    }
+	.email_contact {
+		grid-column: 2;
+		grid-row: 2;
+		width: 100%;
+	}
 }
 
 /*****Footer*****/
 
 .footer {
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    background: #282828;
-    margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+	background: #282828;
+	margin-top: 20px;
 }
 
 .content_footer {
-    align-self: center;
+	align-self: center;
 }
 
 .content_footer img {
-    width: 20%;
+	width: 20%;
 }
 
 .map {
-    width: 400px;
-    height: 400px;
-    justify-self: center;
-    align-self: center;
+	width: 400px;
+	height: 400px;
+	justify-self: center;
+	align-self: center;
 }
 
 .content_footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3vw;
-    margin-bottom: 6vh;
-    margin-top: 3vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 3vw;
+	margin-bottom: 6vh;
+	margin-top: 3vh;
 }
 
 .link1,
 .link3,
 .link5 {
-    grid-column: 1/2;
-    text-align: right;
-    color: white;
+	grid-column: 1/2;
+	text-align: right;
+	color: white;
 }
 
 .link2,
 .link4,
 .link6 {
-    grid-column: 2/3;
-    color: white;
+	grid-column: 2/3;
+	color: white;
 }
 
 @media screen and (min-width: 812px) {
-    .content_footer {
-        max-width: 400px;
-    }
+	.content_footer {
+		max-width: 400px;
+	}
 }
