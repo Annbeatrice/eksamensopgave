@@ -30,6 +30,7 @@
 			right: 0;
 			bottom: 0;
 			width: 98.792vw;
+
 		}
 
 		/*.slogan { position: sticky; bottom: 30vw; background: rgba(0, 0, 0, 0.5); color: #dfd8ce; width: 100%; padding: 20px; } .slogan h2 { text-align: center; }*/
@@ -73,29 +74,10 @@
 
 </head>
 <style>
-	.infographic_container {
+	.infographic_wrapper {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 5px;
-	}
-
-	.infographic {
-		position: relative;
-		width: 50%;
-
-	}
-
-	.infographic:hover .content {
-		/*		filter: grayscale(60%);*/
-		position: absolute;
-		/* Position the background text */
-		bottom: 0;
-		/* At the bottom. Use top:0 to append it to the top */
-		background: rgba(0, 0, 0, 0.5);
-		/* Black background with 0.5 opacity */
-		height: 100%;
-		width: 100%;
-		/* Full width */
+		grid-column-gap: 4px;
 	}
 
 	.img4 {
@@ -109,6 +91,7 @@
 		grid-column: 2;
 		grid-row: 1;
 		align-self: end;
+		justify-self: start;
 	}
 
 	.img3 {
@@ -122,26 +105,13 @@
 		grid-column: 2;
 		grid-row: 2;
 		align-self: start;
+		justify-self: start;
 	}
 
-	.infographic_text {
+	/* Hide Play button + controls on iOS */
 
-		color: white;
-		font-weight: 600;
-		opacity: 0;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 100%;
-		height: 100%;
-		line-height: 1.5;
-
-	}
-
-	.infographic_text:hover {
-		opacity: 1;
-
+	video::-webkit-media-controls {
+		display: none !important;
 	}
 </style>
 
@@ -181,37 +151,44 @@
 	<p>"GMP procedurer i forhold til produktion af stentøj, herunder indhentning af dokumentation, brændetemperatur og kontrol af ovntemperatur. Set overenstemmelseserklæring med angivelse af relevant lovgivning og angivelse af at der ikke er tilsat bly og cadmium. Virksomheden oplyser iøvrigt ikke at benytte råvarer med bly og cadmium."</p>
 </div>-->
 		</div>
-		<section class="infographic_container">
-			<div class="infographic img1">
-				<img src="img/svg/ler.svg" alt="" class="infographic_image">
 
+		<section class="infographic_wrapper">
 
-				<div class="content"><span class="infographic_text">Det sorte ler vi bruger er fra Spanien, mens det hvide stenler er fra Tyskland. <br>Vores ler er kvalitetskontrolleret mht. fremstilling af fødevarekontaktmaterialer.</span></div>
+			<div class="infographic img1" data-img1>
+				<video width="auto" height="250" controls>
+  				<source src="infographic/ler_info.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+				</video>
+
 			</div>
 
-			<div class="infographic img2">
-				<img src="img/svg/ubraent.svg" alt="" class="infographic_image">
+			<div class="infographic img2" data-img2>
+				<video width="auto" height="250" controls>
+  				<source src="infographic/ubraendt_info.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+				</video>
 
-				<div class="content">
-					<span class="infographic_text"><ul><li>Leret skal tørre i 2-3 dage, det kommer alt sammen an på vejret.</li><br>
-				<li>Om sommeren er luften mere fugtig og derfor tager det længere tid for leret at tørre.</li><br>
-					<li>Om vinteren er luften mere tør og derfor tager det kortere tid for leret at tørre.</li></ul></span></div>
 			</div>
 
-			<div class="infographic img3">
-				<img src="img/svg/tallerken.svg" alt="" class="infographic_image">
+			<div class="infographic img3" data-img3>
+				<video width="auto" height="250" controls>
+  				<source src="infographic/tallerken_info.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+				</video>
 
-				<div class="content">
-					<span class="infographic_text">Jeg har altid været rigtig glad for farve. <br>Jeg prøver at finde nogle farver matcher i styrke så der altid er mulighed for at mixe mine forskellige produkter.</span></div>
 			</div>
 
-			<div class="infographic img4">
-				<img src="img/svg/croissant.svg" alt="" class="infographic_image">
+			<div class="infographic img4" data-img4>
+				<video width="auto" height="250" controls>
+  				<source src="infographic/crossaint_info.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+				</video>
 
-				<div class="content">
-					<span class="infographic_text">Det er næsten synd at anrette mad på de flotte tallerkener. Men når du spiser af en lækkert designet tallerken, bliver oplevelsen bare dét bedre!</span></div>
 			</div>
+
 		</section>
+
+
 
 	</section>
 	<footer id="footer" class="footer_grid" data-footer></footer>
@@ -221,38 +198,29 @@
 	<script src="footer.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL_Ih-tJnDNMcCvvYdN1tBeEMRY8yjwsE">
 	</script>
-	<!--
 	<script>
-		//		document.querySelector("[data-infographic-img1]").addEventListener("mouseover", overlayStart);
-		//		document.querySelector("[data-infographic-img2]").addEventListener("mouseover", overlayStart);
-		//		document.querySelector("[data-infographic-img3]").addEventListener("mouseover", overlayStart);
-		//		document.querySelector("[data-infographic-img4]").addEventListener("mouseover", overlayStart);
-		//
-		//		document.querySelector("[data-infographic-text]").style.pointerEvents = "none";
-		//		document.addEventListener("mouseout", overlayEnd);
+		document.querySelectorAll(".infographic").forEach(inf => {
+			inf.addEventListener("mouseover", hoverVideo);
 
+		});
 
-
-		document.querySelector("[data-infographic-img]").addEventListener("mouseover", overlayStart);
-
-
-
-		function overlayStart() {
-			console.log("overlayStart");
-			document.querySelector("[data-infographic-text]").style.opacity = "1";
-			document.querySelector("[data-infographic-text]").style.transition = "1s";
-
+		function hoverVideo() {
+			console.log("hej");
+			this.querySelector('video').play();
 
 		}
 
-		function overlayEnd() {
-			console.log("overlayEnd");
-			document.querySelector("[data-infographic-text]").style.opacity = "0";
-			document.querySelector("[data-infographic-text]").style.transition = "1s";
+		document.querySelectorAll(".infographic").forEach(infEnd => {
+			infEnd.addEventListener("mouseout", hideVideo);
+		})
+
+		function hideVideo() {
+			console.log("slut");
+			this.querySelector('video').pause();
+			this.querySelector('video').currentTime = 0;
 
 		}
 	</script>
--->
 
 </body>
 
