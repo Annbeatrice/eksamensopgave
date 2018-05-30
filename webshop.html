@@ -19,24 +19,22 @@
 	<header id="header" data-header>
 
 	</header>
-	<h1 class="title">Webshop</h1>
+
 	<div class="border"></div>
 	<section class="section_top">
 
 	</section>
 	<div class="slider">
 		<div class="slides">
-			<img class="slide" src="img/stemning1.jpg" alt="">
+			<img class="slide" src="img/stemning1_resize.jpg" alt="">
 		</div>
 		<div class="slides">
-			<img class="slide" src="img/stemning2.jpg" alt="">
+			<img class="slide" src="img/stemning2_resize.jpg" alt="">
 		</div>
 		<div class="slides">
-			<img class="slide" src="img/stemning4.jpg" alt="">
+			<img class="slide" src="img/stemning4_resize.jpg" alt="">
 		</div>
-		<div class="slides">
-			<img class="slide" src="img/stemning5.jpg" alt="">
-		</div>
+
 
 		<!-- Next and previous buttons -->
 		<a class="prev">
@@ -52,6 +50,10 @@
 		<span class="dot dot2"></span>
 		<span class="dot dot3"></span>
 	</div>
+	<h1 class="title">Webshop</h1>
+
+
+
 
 
 	<section class="section_button">
@@ -64,6 +66,22 @@
 		<a href="" class="button" data-button="skaale">Skåle</a>
 		<a href="" class="button" data-button="tallerkener">Tallerkener</a>
 	</section>
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal_content">
+    <span class="closeBtn">&times;</span>
+    <img src="img/buy_boks.png" alt="">
+  </div>
+
+</div>
+
+
+
 
 
 	<div data-receiver class="receiver_webshop"></div>
@@ -79,11 +97,12 @@
            <span class="price" data-item-price></span>
            </div>
            </a>
-           <a href="" class="button_buy">Køb</a>
+           <button id="" class="modalBtn button_buy">Køb</button>
+<!--           <a href="" id="modalBtn" class="button_buy" data-button-buy>Køb</a>-->
         </div>
 
    </template>
-
+<!--<button id="modalBtn" class="button_buy">Køb</button>-->
 	<footer id="footer" class="footer_grid" data-footer></footer>
 
 

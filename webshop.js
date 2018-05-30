@@ -89,7 +89,7 @@ function showProducts() {
         receiver.appendChild(template_clone);
 
     })
-
+    activateModal();
     filter();
 
 }
@@ -147,3 +147,42 @@ function filter(){
     })
 }
 
+/*************Modal***************/
+let modal;
+
+function activateModal(){
+    // Get the modal
+    modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    let arrayOfmodalBtns = document.querySelectorAll(".modalBtn");
+
+    // Get the element that closes the modal
+    let closeBtn = document.getElementsByClassName("closeBtn")[0];
+
+    // Listen for click
+    arrayOfmodalBtns.forEach( modalBtn => {
+        modalBtn.addEventListener("click", openModal);
+    })
+
+    closeBtn.addEventListener("click", closeModal);
+}
+
+// Open Modal
+
+function openModal(){
+
+    modal.style.display = "block";
+
+//    receiver.appendChild(template_clone);
+}
+
+
+
+
+
+function closeModal(){
+
+    modal.style.display = "none";
+
+}
