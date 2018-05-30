@@ -2,9 +2,9 @@
 
 let videoReceiver = document.querySelector("[data-video-receiver]");
 let videoTemplate = document.querySelector("[data-template-video]");
-let video_clone = videoTemplate.cloneNode(true).content;
-let videosOm;
-let videos;
+
+let videos = [];
+let videosnye;
 
 //Om template
 
@@ -67,18 +67,21 @@ function showOm() {
 async function videoJson() {
     let jsonElement = await fetch("http://josefinerasch.dk/kea/08-eksamensprojekt/wordpress/wp-json/wp/v2/youtube_video");
 
-    videosOm = await jsonElement.json();
-    showVideosOm();
+    videos = await jsonElement.json();
+    showVideos();
 
 }
 
 
-function showVideosOm() {
-    videosOm.forEach((v) => {
-        video_clone.querySelector("[data-om-video]").src = v.acf.kategori;
-        video_clone.querySelector("[data-om-title]").innerHTML = v.title.rendered;
+function showVideos() {
+    videos.forEach((v) => {
+        if (v.acf.kategori == "omvideoer") {
+            let video_clone = videoTemplate.cloneNode(true).content;
+            video_clone.querySelector("[data-om-video]").src = v.acf.link;
+            video_clone.querySelector("[data-om-title]").innerHTML = v.title.rendered;
 
-        videoReceiver.appendChild(video_clone);
+            videoReceiver.appendChild(video_clone);
+        }
     });
 }
 
