@@ -1,7 +1,8 @@
 /* definera mottagaren*/
 
 let receiver = document.querySelector("[data-receiver]");
-
+let videosOm;
+let videos;
 
 let om;
 
@@ -15,9 +16,14 @@ let template_clone = template.cloneNode(true).content;
 
 /* dokument lägg till denna lyssnare: när html laddats färdigt hämta jsonfunktionen getJson */
 
-document.addEventListener("DOMContentLoaded", getJson);
+document.addEventListener("DOMContentLoaded", init);
 
-async function getJson(){
+function init() {
+    getJson();
+    videoJson();
+
+}
+async function getJson() {
     /* hämta den här json filen */
 
     let jsonObject = await fetch("http://josefinerasch.dk/kea/08-eksamensprojekt/wordpress/wp-json/wp/v2/om/17");
@@ -34,7 +40,7 @@ async function getJson(){
 
 /* den här funktionen ska hämta innehåll från json */
 
-function showOm(){
+function showOm() {
     let img = template_clone.querySelector("[data-image-om]");
     console.log(om.acf)
 
@@ -46,6 +52,27 @@ function showOm(){
     template_clone.querySelector("[data-restaurantlist-clients]").innerHTML = om.acf.engro_list;
 
     receiver.appendChild(template_clone);
+}
+
+/* get video */
+
+async function videoJson() {
+    let jsonElement = await fetch("http://josefinerasch.dk/kea/08-eksamensprojekt/wordpress/wp-json/wp/v2/youtube_video");
+
+    videosOm = await jsonElement.json();
+    showVideosOm();
+
+}
 
 
+function showVideosOm() {
+    videosOm.forEach((v) => {
+
+        if (v.id == 137 ||  v.id == 131 ||  v.id == 133 || v.id == 130) {
+            document.querySelector("[data-om-title]").innerHTML = v.title.rendered;
+            document.querySelector("[data-om-video]").src = v.acf.link;
+            console.log(v.id);
+
+        }
+    });
 }
