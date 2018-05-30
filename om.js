@@ -55,8 +55,8 @@ function showOm() {
     template_clone.querySelector("[data-text-om]").innerHTML = om.acf.about;
     img.src = om.acf.image;
     template_clone.querySelector("[data-about-clients]").innerHTML = om.acf.about;
-    template_clone.querySelector("[data-engrolist-clients]").textContent = om.acf.engro_list;
-    template_clone.querySelector("[data-restaurantlist-clients]").textContent = om.acf.restaurent_list;
+    template_clone.querySelector("[data-engrolist-clients]").innerHTML = om.acf.engro_list;
+    template_clone.querySelector("[data-restaurantlist-clients]").innerHTML = om.acf.restaurent_list;
 
     receiver.appendChild(template_clone);
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Om</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/icon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/icon/favicon-32x32.png">
@@ -34,15 +34,21 @@
             margin: 10px;
         }
 
-        textarea.engro,
-        .restaurant {
-            text-align: center;
+        .list_clients,
+        .list_restaurant {
+            overflow: scroll;
+            width: 300px;
             outline: none;
-            height: 60px;
+            height: 90px;
             border: none;
             margin: 10px;
             font-family: 'acumin pro';
+            background-color: rgba(139, 178, 122, 0.25);
+            font-size: 1rem;
+            padding: 20px;
+
         }
+
 
         textarea {
             background-color: rgba(139, 178, 122, 0.35);
@@ -53,12 +59,6 @@
             text-align: center;
         }
 
-        .text_om,
-
-        .about_clients,
-            {
-            justify-self: center;
-        }
 
         .om_video {
             max-width: 100%;
@@ -109,21 +109,26 @@
                 text-align: center;
             }
 
-            textarea.restaurant {
-                grid-template-columns: 2;
-                height: 100px;
+            .list_clients {
+                grid-column: 2;
                 grid-row: 6;
             }
-            textarea.engro {
-                grid-template-columns: 1;
-                height: 100px;
+            .list_restaurant {
+                grid-column: 1;
                 grid-row: 6;
             }
             .video_items {
-                grid-template-columns: 1;
+                grid-column: 1;
             }
+            .list_clients,
+            .list_restaurant {
+                width: 450px;
+            }
+        }
 
     </style>
+
+
 </head>
 
 <body>
@@ -140,12 +145,12 @@
         <h2>Erhvervskunder</h2>
         <div class="about_clients" data-about-clients></div>
 
-       <h3 class="en_h3">Engro</h3>
-        <textarea name="Engro" class="engro" class="list_clients" data-engrolist-clients>
-            </textarea>
+       <h3 class="en_h3">Engros</h3>
+        <div name="Engro" class="list_clients" data-engrolist-clients>
+            </div>
 
-<h3 class="re_h3">Restauranger</h3>
-        <textarea name="Restauranger" class="restaurant" class="list_restaurant" data-restaurantlist-clients></textarea>
+        <h3 class="re_h3">Restauranter</h3>
+        <div name="Restauranger" class="list_restaurant" data-restaurantlist-clients></div>
 
          </template>
 
@@ -155,7 +160,7 @@
         <div class="video_items">
             <h3 class="om_item_title" data-om-title></h3>
             <iframe width="420" height="345" src="" data-om-video class="om_video">
-</iframe>
+     </iframe>
 
             <span class="video_description"></span>
         </div>
