@@ -217,7 +217,7 @@ img {
 
 @media screen and (min-width: 1024px) {
 	.header_wrapper {
-		top: 40px;
+		top: 9vh;
 	}
 	.burger {
 		display: none;
