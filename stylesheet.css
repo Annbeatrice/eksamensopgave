@@ -12,7 +12,6 @@ body {
 
 	margin: 0;
 	background-image: url(img/oldcement25.png);
-
 }
 
 p {
@@ -30,11 +29,50 @@ h3 {
 	font-size: 1.1rem;
 }
 
+
+a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Playfair Display', serif;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+}
+
+h3 {
+	font-weight: 100;
+}
+
+img {
+
+	width: 100%;
+}
+
+.button_buy {
+	background: #46757d;
+	color: white;
+	letter-spacing: 2px;
+	padding: 10px 80px;
+	transition: transform .2s;
+}
+
+.button_buy:hover {
+	transform: scale(1.03);
+	box-shadow: 0 1px 8px rgba(0, 0, 0, .2);
+
+}
+
 /*********** header *****************/
 
 .header_container {
 	display: grid;
 	grid-template-columns: 30% 70%;
+	width: 100vw;
+	position: fixed;
+	z-index: 150;
+	background: white;
 }
 
 .header_wrapper {
@@ -46,15 +84,8 @@ h3 {
 	top: 25%;
 	width: 100%;
 	text-align: center;
-	margin-top: 30px;
 	display: block;
-
-
-}
-
-.header_wrapper a {
-
-	/*    border: solid 1px black;*/
+	max-height: 70px;
 }
 
 .logo {
@@ -64,17 +95,15 @@ h3 {
 }
 
 .logo img {
-	max-width: 20vw;
-	margin: 1vw;
+	max-width: 18vw;
 }
 
 .bg_video {
-	position: sticky;
+	position: relative;
 	right: 0;
 	bottom: 0;
-	width: 98.792vw;
+	width: 100vw;
 }
-
 
 /********** nav ***********/
 
@@ -90,7 +119,6 @@ h3 {
 	overflow-y: hidden;
 	transition: 0.5s;
 }
-
 
 .overlay a {
 	padding: 8px;
@@ -131,83 +159,78 @@ h3 {
 	padding-bottom: 1vh;
 }
 
+.burger img {
+	width: 30px;
+	height: 30px;
+}
+
 /********** burger end ***********/
-
-/******************* header end *********/
-
-a {
-	text-decoration: none;
-	color: black;
-	font-family: 'Playfair Display', serif;
-}
-
-h1 {
-	text-align: center;
-	font-family: 'Playfair Display', serif;
-
-}
-
-h3 {
-	font-weight: 100;
-}
-
-/*
-.border{
-    position: absolute;
-    border: solid 1px rgba(40, 40, 40, 0.36);
-    border-width: thin;
-    left: 10vw;
-    right: 10vw;
-    max-width: 1024px;
-}
-*/
-
-img {
-
-	width: 100%;
-	/*    height: 350px;*/
-}
-
-/*
-.section_button {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	margin: 3vw 0 2vw 0;
-
-
-}
-
-
-
-@media screen and (min-width: 1024px) {
-	.section_button {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 10px;
-		margin: 0 auto;
-	}
-
-}
-*/
-
-.button_buy {
-	background: #46757d;
-	color: white;
-	letter-spacing: 2px;
-	padding: 10px 80px;
-	transition: transform .2s;
-}
-
-.button_buy:hover {
-	transform: scale(1.03);
-	box-shadow: 0 1px 8px rgba(0, 0, 0, .2);
-
-}
-
 
 /********* header desktop ********/
 
-@media screen and (min-width: 812px) {
+@media screen and (min-width: 1024px) {
+	.overlay {
+		bottom: auto;
+		height: 95%;
+		max-height: 100px;
+		max-width: 100vw;
+		overflow-y: initial;
+		left: 30vw;
+		right: 0;
+		text-align: right;
+		background: white;
+		/*background: linear-gradient(to left, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 0) 100%);*/
+	}
+	.overlay a {
+		font-size: 1.2rem;
+		color: #282828;
+	}
+	.header_wrapper {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-evenly;
+		text-align: center;
+		width: 55vw;
+		top: 51px;
+	}
+	.overlay .closebtn {
+		display: none;
+	}
+
+	.overlay a:hover,
+	.overlay a:focus {
+		color: #46757D;
+	}
+
+	.logo img {
+		max-width: 12vw;
+
+	}
+	.header_container {
+		height: 118px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.header_wrapper {
+		top: 40px;
+	}
+	.burger {
+		display: none;
+	}
+}
+
+.wrapper {
+	position: absolute;
+	top: 17vh;
+}
+
+/********* header desktop end ********/
+
+/******************* header end *********/
+
+/*
+******** header desktop ******* @media screen and (min-width: 812px) {
 	.burger {
 		display: none;
 	}
@@ -253,7 +276,7 @@ img {
 		max-width: 12vw;
 	}
 
-}
+}*/
 
 /************* index / forside **************/
 
@@ -262,9 +285,37 @@ img {
 }
 
 .quote {
-	margin: 2vh 15vw;
+	top: 37vh;
+	margin: 1vh;
 	text-align: center;
 	line-height: 1.8;
+	max-width: 88vw;
+}
+
+@media screen and (min-width: 600px) {
+	.quote {
+		top: 46vh;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.quote {
+		top: 54vh;
+	}
+	.wrapper {
+		top: 22vh;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.wrapper {
+		position: absolute;
+		top: 22vh;
+	}
+
+	.quote {
+		top: 72vh;
+	}
 }
 
 /************* index / forside end **************/
@@ -272,10 +323,7 @@ img {
 /*************  Slider  ************/
 
 .slider img {
-
 	width: 100%;
-
-
 }
 
 .slider {
@@ -285,9 +333,7 @@ img {
 }
 
 .slides {
-
 	display: none;
-
 }
 
 .prev,
@@ -328,12 +374,10 @@ img {
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 0.6s ease;
-
 }
 
 
 .fade {
-
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 1.5s;
 	animation-name: fade;
@@ -356,7 +400,6 @@ img {
 	to {
 		opacity: 1
 	}
-
 }
 
 .active,
@@ -389,9 +432,7 @@ img {
 	margin: 20% auto;
 	padding: 20px;
 	width: 80%;
-
 }
-
 
 @media screen and (min-width: 812px) {
 
@@ -400,12 +441,10 @@ img {
 		margin: 20% auto;
 		padding: 20px;
 		width: 30%;
-
 	}
 }
 
 .closeBtn {
-
 	color: #ccc;
 	float: right;
 	font-size: 30px;
@@ -417,7 +456,6 @@ closeBtn:focus {
 	text-decoration: none;
 	cursor: pointer;
 }
-
 
 /************Webshop modal End *******/
 
@@ -990,20 +1028,16 @@ closeBtn:focus {
 
 /*****Footer*****/
 
+.content_footer img {
+	width: 20%;
+}
+
 .footer {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 20px;
 	background: #282828;
 	margin-top: 20px;
-}
-
-.content_footer {
-	align-self: center;
-}
-
-.content_footer img {
-	width: 20%;
 }
 
 .map {
@@ -1014,11 +1048,13 @@ closeBtn:focus {
 }
 
 .content_footer {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 3vw;
+	align-self: center;
 	margin-bottom: 6vh;
 	margin-top: 3vh;
+	grid-column: 2/3;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	display: grid;
 }
 
 .link1,
@@ -1036,7 +1072,22 @@ closeBtn:focus {
 	color: white;
 }
 
-@media screen and (min-width: 812px) {
+.link1,
+.link2 {
+	grid-row: 1/2;
+}
+
+.link3,
+.link4 {
+	grid-row: 2/3;
+}
+
+.link5,
+.link26 {
+	grid-row: 3/4;
+}
+
+@media screen and (min-width: 768px) {
 	.content_footer {
 		max-width: 400px;
 	}
