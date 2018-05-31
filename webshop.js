@@ -10,28 +10,36 @@ document.querySelector(".dot3").addEventListener("click", () => {
     currentSlide(3)
 });
 
-document.querySelector(".prev").addEventListener("click", () => {plusSlides(-1)});
-document.querySelector(".next").addEventListener("click", () => {plusSlides(1)});
+document.querySelector(".prev").addEventListener("click", () => {
+    plusSlides(-1)
+});
+document.querySelector(".next").addEventListener("click", () => {
+    plusSlides(1)
+});
+
+setInterval( () => {
+    plusSlides(1);
+} , 3000) ;
 
 var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-    console.log("plusSlides()")
+//  console.log("plusSlides()")
   showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-    console.log("currentSlide()")
+//  console.log("currentSlide()")
   showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-    console.log("showSlides()")
+//  console.log("showSlides()")
   var i;
   var slides = document.getElementsByClassName("slides");
   var dots = document.getElementsByClassName("dot");
-    console.log(slides[slideIndex-1])
+//  console.log(slides[slideIndex-1]);
 
   // Er n större end längden på arrayet?
   if (n > slides.length) {slideIndex = 1}
@@ -115,6 +123,9 @@ function filter(){
             // Var vi förhindrar att den öppnar en link
             event.preventDefault();
 
+            // Luk dropdown
+            openDropdown();
+
             let buttonName = event.target.dataset.button;
             // Här kommer eventet
 
@@ -177,12 +188,41 @@ function openModal(){
 //    receiver.appendChild(template_clone);
 }
 
-
-
-
-
 function closeModal(){
 
     modal.style.display = "none";
 
 }
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Dropdown webshop
+// get dropdwon section
+let dropdownSection = document.querySelector(".section_button");
+let dropdownActive = false;
+// get button that opens section
+let dropdownBtn = document.querySelector("[data-dropbtn-webshop]");
+
+// Listen for click
+dropdownBtn.addEventListener("click", openDropdown);
+
+
+function openDropdown(){
+
+    if (dropdownActive){
+
+        dropdownActive = false;
+        dropdownSection.classList.add("dropdown-hidden");
+    }else{
+        dropdownActive = true;
+        dropdownSection.classList.remove("dropdown-hidden");
+    }
+
+
+}
+
