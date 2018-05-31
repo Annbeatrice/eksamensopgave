@@ -1,6 +1,17 @@
+@font-face {
+	font-family: 'Playfair Display';
+	src: url(fonts/playfair/PlayfairDisplay-Regular.otf);
+}
+
+@font-face {
+	font-family: 'Acumin';
+	src: url(fonts/acumin-pro/Acumin-regular.otf);
+}
+
 body {
 
 	margin: 0;
+	background-image: url(img/oldcement.png);
 
 }
 
@@ -808,6 +819,10 @@ closeBtn:focus {
 	grid-column-gap: 4px;
 }
 
+.infographic {
+	justify-self: center;
+}
+
 @media screen and (min-width: 768px) {
 	.infographic_wrapper {
 		display: grid;
@@ -843,7 +858,10 @@ closeBtn:focus {
 		justify-self: start;
 
 	}
-
+	.infographic_headline {
+		margin: 20vh 15vw 5vh 25vw;
+		font-family: 'Acumin', sans-serif;
+	}
 
 }
 
@@ -851,5 +869,16 @@ closeBtn:focus {
 	/* Hide Play button + controls on iOS */
 	video::-webkit-media-controls {
 		display: none !important;
+	}
+	.infographic_headline {
+		margin: 20vh 15vw 5vh 33vw;
+		font-family: 'Acumin', sans-serif;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.infographic_headline {
+		margin: 10vh 4vw 5vh 2vw;
+		font-family: 'Acumin', sans-serif;
 	}
 }
