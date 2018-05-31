@@ -527,7 +527,7 @@ closeBtn:focus {
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
 
     z-index: 1;
-    border-bottom: solid 8px rgba(70, 117, 125, 0.35);
+    border-bottom: solid 2px rgba(70, 117, 125, 0.35);
     margin: 0 10px;
 }
 
@@ -793,6 +793,89 @@ closeBtn:focus {
 /***** MEDIA Q DESKTOP END******/
 
 /******Nyhedsarkiv*****/
+
+.receiver_nyhedsarkiv {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	margin: 0 auto;
+	max-width: 1024px;
+
+}
+
+.nyhed {
+	display: grid;
+	grid-template-columns: 40% 60%;
+    border-bottom: solid 2px rgba(70, 117, 125, 0.35);
+	border-left: solid 0.4px rgba(70, 117, 125, 0.35);
+    border-right: solid 0.4px rgba(70, 117, 125, 0.35);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+	margin: 10px;
+}
+
+
+.text_boxh3{
+    grid-column-start: 1;
+    align-self: center;
+    justify-self: start;
+    grid-row-start: 1;
+    margin: 20px;
+    padding: 20px;
+}
+.newsletter_image{
+grid-column: 2;
+    width: 74%;
+    justify-self: end;
+        padding: 15px 15px 15px 0;
+}
+
+
+/*
+.newsletter_title {
+	grid-column-start: 1;
+	align-self: center;
+	justify-self: center;
+}
+
+
+.text_box {
+
+
+}
+*/
+
+.image_nyhed {
+	width: 30vw;
+	justify-self: center;
+	grid-column: 2;
+}
+
+
+.receiver_news_single{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+	grid-column: 2;
+	grid-row: 1 / 2;
+	width: 100%;
+	margin-top: 20px;
+}
+
+}
+
+.receiver_news_single h2{
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+    text-transform: uppercase;
+
+}
+
+.receiver_news_single .title{
+        justify-self: center;
+    align-self: center;
+}
+
+/******Nyhedsarkiv end*****/
 
 .contact_receiver {
     display: grid;
