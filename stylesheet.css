@@ -904,6 +904,7 @@ closeBtn:focus {
     border-left: solid 0.4px rgba(70, 117, 125, 0.35);
     border-right: solid 0.4px rgba(70, 117, 125, 0.35);
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.35);
 }
 
 
