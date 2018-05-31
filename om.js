@@ -1,4 +1,4 @@
-//video variation
+//video var
 
 let videoReceiver = document.querySelector("[data-video-receiver]");
 let videoTemplate = document.querySelector("[data-template-video]");
@@ -6,7 +6,7 @@ let videoTemplate = document.querySelector("[data-template-video]");
 let videos = [];
 let videosnye;
 
-//Om template
+/*  Om template */
 
 /* definera mottagaren*/
 
@@ -84,14 +84,3 @@ function showVideos() {
         }
     });
 }
-
-
-// videosOm.forEach((v) => {
-//
-//        if (v.id == 137 ||  v.id == 131 ||  v.id == 133 || v.id == 130) {
-//            document.querySelector("[data-om-title]").innerHTML = v.title.rendered;
-//            document.querySelector("[data-om-video]").src = v.acf.link;
-//            console.log(v.id);
-//
-//        }
-//    });
