@@ -233,55 +233,6 @@ img {
 
 /******************* header end *********/
 
-/*
-******** header desktop ******* @media screen and (min-width: 812px) {
-	.burger {
-		display: none;
-	}
-	.overlay {
-		bottom: auto;
-		height: 95%;
-		max-height: 120px;
-		max-width: 99vw;
-		overflow-y: initial;
-		left: 44vw;
-		right: 0;
-		text-align: right;
-		background: linear-gradient(to left, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 0) 100%);
-	}
-	.overlay a {
-		font-size: 1.2rem;
-		color: #282828;
-	}
-	.header_wrapper {
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: space-evenly;
-		text-align: center;
-		width: 55vw;
-		top: 51px;
-	}
-	.overlay .closebtn {
-		display: none;
-	}
-
-	.overlay a:hover,
-	.overlay a:focus {
-		color: #8bb27a;
-	}
-
-}
-
-@media screen and (min-width: 1024px) {
-	.header_wrapper {
-		top: 40px;
-	}
-	.logo img {
-		max-width: 12vw;
-	}
-
-}*/
-
 /************* index / forside **************/
 
 #header {
@@ -935,6 +886,8 @@ closeBtn:focus {
 
 /******Nyhedsarkiv end*****/
 
+/****** kontakt ************/
+
 .contact_receiver {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
@@ -1026,9 +979,18 @@ closeBtn:focus {
 		grid-column: 2;
 		grid-row: 2;
 		width: 100%;
-
 	}
 }
+
+.opening_hours,
+.number,
+.cvr,
+.address,
+.email {
+	font-family: acumin pro;
+}
+
+/****** kontakt end ************/
 
 /*****Footer*****/
 
