@@ -103,7 +103,6 @@ img {
 	right: 0;
 	bottom: 0;
 	width: 100vw;
-	z-index: 150;
 }
 
 /********** nav ***********/
@@ -1058,6 +1057,8 @@ closeBtn:focus {
 	height: 400px;
 	justify-self: center;
 	align-self: center;
+	max-width: 50vw;
+	max-height: 50%;
 }
 
 .content_footer {
