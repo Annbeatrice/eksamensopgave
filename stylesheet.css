@@ -6,6 +6,13 @@
 @font-face {
 	font-family: 'Acumin';
 	src: url(fonts/acumin-pro/Acumin-regular.otf);
+
+}
+
+@font-face {
+	font-family: 'Acumin Bold';
+	src: url(fonts/acumin-pro/Acumin-bold.otf);
+
 }
 
 body {
@@ -17,7 +24,7 @@ body {
 
 p {
 	font-family: 'Acumin', sans-serif;
-	font-size: 1rem;
+	font-size: 1.2rem;
 }
 
 h2 {
@@ -27,7 +34,7 @@ h2 {
 
 h3 {
 	font-family: 'Acumin', sans-serif;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 }
 
 /*********** header *****************/
@@ -265,6 +272,8 @@ img {
 	margin: 2vh 15vw;
 	text-align: center;
 	line-height: 1.8;
+	font-family: 'fairplay display', serif;
+	font-size: 1.5rem;
 }
 
 /************* index / forside end **************/
@@ -844,6 +853,9 @@ closeBtn:focus {
 	padding: 15px 15px 15px 0;
 }
 
+.newsletter_title {
+	font-size: 1.3rem;
+}
 
 /*
 .newsletter_title {
@@ -912,24 +924,32 @@ closeBtn:focus {
 	grid-column: ;
 	grid-row: 1;
 	width: 100%;
+	font-family: 'Acumin', sans-serif;
+	font-size: 1.2rem;
 }
 
 .number_contact {
 	grid-column: 1;
 	grid-row: 3;
 	width: 100%;
+	font-family: 'Acumin', sans-serif;
+	font-size: 1.2rem;
 }
 
 .cvr_contact {
 	grid-column: 1;
 	grid-row: 5;
 	width: 100%;
+	font-family: 'Acumin', sans-serif;
+	font-size: 1.2rem;
 }
 
 .address_contact {
 	grid-column: 1;
 	grid-row: 2;
 	width: 100%;
+	font-family: 'Acumin', sans-serif;
+	font-size: 1.2rem;
 
 }
 
@@ -937,6 +957,12 @@ closeBtn:focus {
 	grid-column: 1;
 	grid-row: 4;
 	width: 100%;
+	font-family: 'Acumin', sans-serif;
+	font-size: 1.2rem;
+}
+
+.kontakt_h3 {
+	font-family: 'Acumin Bold', sans-serif;
 }
 
 
