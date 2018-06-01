@@ -1293,7 +1293,7 @@ closeBtn:focus {
 		display: none !important;
 	}
 	.infographic_headline {
-		margin: 20vh 15vw 5vh 33vw;
+		margin: 20vh 15vw 5vh 15vw;
 		font-family: 'Acumin', sans-serif;
 	}
 }

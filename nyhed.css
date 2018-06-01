@@ -40,6 +40,8 @@
 	cursor: pointer;
 	width: 10vw;
 	height: 6vh;
+	height: 6vh;
+	background-color: transparent;
 }
 
 .single_btn_popup:before {
@@ -238,8 +240,8 @@ input #submit_nyhed {
 		width: 35vw;
 	}
 	.single_btn_popup {
-		width: 5vw;
-		height: 4vh;
+		width: 5vw !important;
+		height: 4vh !important;
 	}
 	.popup_content {
 		height: 55vh;
