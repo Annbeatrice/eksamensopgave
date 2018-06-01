@@ -14,6 +14,7 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="nyhed.css">
 </head>
 
 <body>
@@ -21,13 +22,43 @@
 	<header id="header" data-header>
 
 	</header>
+	<button class="single_btn"><img src="img/konvolut_ring_groen.png"> </button>
+	<div class="popup" id="popup">
+		<div class="popup_content popup_nyhed">
+			<button class="single_btn_popup"></button>
+			<h2 class="single_titel" data-singletitel>Tilmeld dig Nyhedsbrev</h2>
+			<div class="single_info">
+				<form>
+					<p class="grid_nyhed">
+						<label id="fornavn">Navn</label>
+						<input type="text" name="fornavn" class="fornavn" placeholder="Skriv dit fulde navn her" required> </p>
+
+					<p class="grid_nyhed">
+						<label id="email">Email</label>
+						<input type="email" name="email" class="email" placeholder="Skriv din e-mail her" required></p>
+
+					<input type="submit" id="submit_nyhed" data-submitNyhed>
+				</form>
+			</div>
+		</div>
+		<div id="tilmeldt_nyhedsbrev" data-tilmeldingModtaget>
+			<h1 class="h1_nyhed">Tak for din tilmelding</h1>
+			<p class="p_nyhed">
+				Vi er glade for at du gerne vil høre mere om de spændende begivenheder her hos Per Bo.<br> Du vil modtage vores nyhedsbrev hver 2. Onsdag 11:45<br><br> Med venlig hilsen<br> Per Bo
+
+			</p>
+
+		</div>
+	</div>
+
+
 	<section class="section_top">
 
 		<div class="border"></div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2lHy0_TgY40" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="ad_video"></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/2lHy0_TgY40" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="ad_video"></iframe>
 	</section>
 
-		<h1 class="title">Videogalleri</h1>
+	<h1 class="title">Videogalleri</h1>
 	<div data-receiver class="gallery_item_receiver"></div>
 	<template data-template-videogallery>
 
@@ -47,7 +78,10 @@
 	<script src="videogallery.js"></script>
 	<script src="header.js"></script>
 	<script src="footer.js"></script>
+	<script src="nyhedsbrev.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL_Ih-tJnDNMcCvvYdN1tBeEMRY8yjwsE">
+
+
 	</script>
 </body>
 

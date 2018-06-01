@@ -33,7 +33,7 @@ function showTilmeldtNyhedsbrev() {
 	document.querySelector("[data-tilmeldingModtaget]").style.pointerEvents = "auto";
 
 
-	setTimeout(slut, 8000);
+	setTimeout(slut, 5000);
 }
 
 function slut() {

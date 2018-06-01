@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="nyhed.css">
 </head>
 
 <body>
@@ -55,33 +57,61 @@
 
 
 
-<div class="dropdown_webshop" data-dropdown-webshop>
-  <button class="dropbtn_webshop" data-dropbtn-webshop>Produkter</button>
+	<div class="dropdown_webshop" data-dropdown-webshop>
+		<button class="dropbtn_webshop" data-dropbtn-webshop>Produkter</button>
 
-	<section class="section_button dropdown-hidden">
-		<a href="" class="button" data-button="webshop_item">Alle</a>
-		<a href="" class="button" data-button="krus_og_kopper">Krus og Kopper</a>
-		<a href="" class="button" data-button="vaser">Vaser</a>
-		<a href="" class="button" data-button="tekander">Tekander
+		<section class="section_button dropdown-hidden">
+			<a href="" class="button" data-button="webshop_item">Alle</a>
+			<a href="" class="button" data-button="krus_og_kopper">Krus og Kopper</a>
+			<a href="" class="button" data-button="vaser">Vaser</a>
+			<a href="" class="button" data-button="tekander">Tekander
 </a>
-		<a href="" class="button" data-button="kander">Kander</a>
-		<a href="" class="button" data-button="skaale">Skåle</a>
-		<a href="" class="button" data-button="tallerkener">Tallerkener</a>
-	</section>
-    </div>
+			<a href="" class="button" data-button="kander">Kander</a>
+			<a href="" class="button" data-button="skaale">Skåle</a>
+			<a href="" class="button" data-button="tallerkener">Tallerkener</a>
+		</section>
+	</div>
 
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal_content">
-    <span class="closeBtn">&times;</span>
-    <img src="img/buy_boks.png" alt="">
-  </div>
+		<!-- Modal content -->
+		<div class="modal_content">
+			<span class="closeBtn">&times;</span>
+			<img src="img/buy_boks.png" alt="">
+		</div>
 
-</div>
+	</div>
 
+	<button class="single_btn"><img src="img/konvolut_ring_groen.png"> </button>
+	<div class="popup" id="popup">
+		<div class="popup_content popup_nyhed">
+			<button class="single_btn_popup"></button>
+			<h2 class="single_titel" data-singletitel>Tilmeld dig Nyhedsbrev</h2>
+			<div class="single_info">
+				<form>
+					<p class="grid_nyhed">
+						<label id="fornavn">Navn</label>
+						<input type="text" name="fornavn" class="fornavn" placeholder="Skriv dit fulde navn her" required> </p>
+
+					<p class="grid_nyhed">
+						<label id="email">Email</label>
+						<input type="email" name="email" class="email" placeholder="Skriv din e-mail her" required></p>
+
+					<input type="submit" id="submit_nyhed" data-submitNyhed>
+				</form>
+			</div>
+		</div>
+		<div id="tilmeldt_nyhedsbrev" data-tilmeldingModtaget>
+			<h1 class="h1_nyhed">Tak for din tilmelding</h1>
+			<p class="p_nyhed">
+				Vi er glade for at du gerne vil høre mere om de spændende begivenheder her hos Per Bo.<br> Du vil modtage vores nyhedsbrev hver 2. Onsdag 11:45<br><br> Med venlig hilsen<br> Per Bo
+
+			</p>
+
+		</div>
+	</div>
 
 
 
@@ -104,16 +134,19 @@
         </div>
 
    </template>
-<!--<button id="modalBtn" class="button_buy">Køb</button>-->
+	<!--<button id="modalBtn" class="button_buy">Køb</button>-->
 	<footer id="footer" class="footer_grid" data-footer></footer>
 
 
 	<script src="header.js"></script>
 	<script src="webshop.js"></script>
 	<script src="footer.js"></script>
-
+	<script src="nyhedsbrev.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL_Ih-tJnDNMcCvvYdN1tBeEMRY8yjwsE">
+
+
 	</script>
 
 </body>
+
 </html>
