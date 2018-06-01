@@ -85,6 +85,7 @@ img {
 	z-index: 150;
 	background: white;
 	top: 0;
+	max-height: 128px;
 }
 
 .header_wrapper {
@@ -747,8 +748,6 @@ closeBtn:focus {
 	grid-column-start: 1;
 	grid-row-start: 1;
 	justify-self: center;
-	text-transform: uppercase;
-
 
 }
 
@@ -806,9 +805,6 @@ closeBtn:focus {
 		grid-column-start: 1;
 		grid-row-start: 1;
 		justify-self: center;
-		text-transform: uppercase;
-
-
 	}
 
 	.product img {
@@ -1088,8 +1084,10 @@ closeBtn:focus {
 		margin-left: 20%;
 		margin-right: 20%;
 		justify-items: center;
-
-
+	}
+	.content_wrapper {
+		position: relative;
+		top: 3.8vh;
 	}
 	.openinghours_contact {
 		grid-column: 1;
