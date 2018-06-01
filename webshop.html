@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,76 +20,76 @@
 	<header id="header" data-header>
 
 	</header>
+	<div class="wrapper">
+		<div class="border"></div>
+		<section class="section_top">
 
-	<div class="border"></div>
-	<section class="section_top">
+		</section>
+		<div class="slider">
+			<div class="slides">
+				<img class="slide" src="img/stemning1_resize.jpg" alt="">
+			</div>
+			<div class="slides">
+				<img class="slide" src="img/stemning2_resize.jpg" alt="">
+			</div>
+			<div class="slides">
+				<img class="slide" src="img/stemning4_resize.jpg" alt="">
+			</div>
 
-	</section>
-	<div class="slider">
-		<div class="slides">
-			<img class="slide" src="img/stemning1_resize.jpg" alt="">
+
+			<!-- Next and previous buttons -->
+			<a class="prev">
+				<div class="arrow">&#10094;</div>
+			</a>
+			<a class="next">&#10095;</a>
+
 		</div>
-		<div class="slides">
-			<img class="slide" src="img/stemning2_resize.jpg" alt="">
+
+		<!-- The dots/circles -->
+		<div class="slider_dots">
+			<span class="dot dot1"></span>
+			<span class="dot dot2"></span>
+			<span class="dot dot3"></span>
 		</div>
-		<div class="slides">
-			<img class="slide" src="img/stemning4_resize.jpg" alt="">
-		</div>
-
-
-		<!-- Next and previous buttons -->
-		<a class="prev">
-			<div class="arrow">&#10094;</div>
-		</a>
-		<a class="next">&#10095;</a>
-
-	</div>
-
-	<!-- The dots/circles -->
-	<div class="slider_dots">
-		<span class="dot dot1"></span>
-		<span class="dot dot2"></span>
-		<span class="dot dot3"></span>
-	</div>
-	<h1 class="title">Webshop</h1>
+		<h1 class="title">Webshop</h1>
 
 
 
 
-<div class="dropdown_webshop" data-dropdown-webshop>
-  <button class="dropbtn_webshop" data-dropbtn-webshop>Produkter</button>
+		<div class="dropdown_webshop" data-dropdown-webshop>
+			<button class="dropbtn_webshop" data-dropbtn-webshop>Produkter</button>
 
-	<section class="section_button dropdown-hidden">
-		<a href="" class="button" data-button="webshop_item">Alle</a>
-		<a href="" class="button" data-button="krus_og_kopper">Krus og Kopper</a>
-		<a href="" class="button" data-button="vaser">Vaser</a>
-		<a href="" class="button" data-button="tekander">Tekander
+			<section class="section_button dropdown-hidden">
+				<a href="" class="button" data-button="webshop_item">Alle</a>
+				<a href="" class="button" data-button="krus_og_kopper">Krus og Kopper</a>
+				<a href="" class="button" data-button="vaser">Vaser</a>
+				<a href="" class="button" data-button="tekander">Tekander
 </a>
-		<a href="" class="button" data-button="kander">Kander</a>
-		<a href="" class="button" data-button="skaale">Skåle</a>
-		<a href="" class="button" data-button="tallerkener">Tallerkener</a>
-	</section>
-    </div>
+				<a href="" class="button" data-button="kander">Kander</a>
+				<a href="" class="button" data-button="skaale">Skåle</a>
+				<a href="" class="button" data-button="tallerkener">Tallerkener</a>
+			</section>
+		</div>
 
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal_content">
-    <span class="closeBtn">&times;</span>
-    <img src="img/buy_boks.png" alt="">
-  </div>
+			<!-- Modal content -->
+			<div class="modal_content">
+				<span class="closeBtn">&times;</span>
+				<img src="img/buy_boks.png" alt="">
+			</div>
 
-</div>
-
-
+		</div>
 
 
 
-	<div data-receiver class="receiver_webshop"></div>
 
-	<template data-template-webshop>
+
+		<div data-receiver class="receiver_webshop"></div>
+
+		<template data-template-webshop>
 
         <div class="webshop_item" data-item-container>
          <a href="" data-item-link>
@@ -104,16 +105,19 @@
         </div>
 
    </template>
-<!--<button id="modalBtn" class="button_buy">Køb</button>-->
-	<footer id="footer" class="footer_grid" data-footer></footer>
-
+		<!--<button id="modalBtn" class="button_buy">Køb</button>-->
+		<footer id="footer" class="footer_grid" data-footer></footer>
+	</div>
 
 	<script src="header.js"></script>
 	<script src="webshop.js"></script>
 	<script src="footer.js"></script>
 
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL_Ih-tJnDNMcCvvYdN1tBeEMRY8yjwsE">
+
+
 	</script>
 
 </body>
+
 </html>
