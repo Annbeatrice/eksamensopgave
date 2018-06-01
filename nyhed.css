@@ -1,0 +1,181 @@
+.popup {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	z-index: 10;
+	top: 24vh;
+}
+
+.popup_content {
+	height: 70vh;
+	width: 40vw;
+	background: #fff;
+	top: 3vh;
+	left: 28vw;
+	position: absolute;
+	overflow: scroll;
+}
+
+
+.single_btn {
+	border-style: none;
+	width: 6vw;
+	height: 17vh;
+	top: 78vh;
+	left: 95vw;
+	position: sticky;
+	border-radius: 50%;
+	background-color: transparent;
+}
+
+.single_btn_popup {
+	border: none;
+	cursor: pointer;
+	width: 3vw;
+	height: 8vh;
+}
+
+.single_btn_popup:before {
+	content: '';
+	height: 25px;
+	border-left: 4px solid #000;
+	border-radius: 2px;
+	position: absolute;
+	transform: rotate(-45deg);
+	left: 17px;
+	top: 7px;
+
+}
+
+.single_btn_popup:after {
+	content: '';
+	height: 25px;
+	border-left: 4px solid #000;
+	border-radius: 2px;
+	position: absolute;
+	transform: rotate(45deg);
+	left: 17px;
+	top: 7px;
+
+}
+
+.single_info {
+	padding: 0 20px;
+	display: grid;
+}
+
+.single_titel {
+
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+form {
+	justify-self: center;
+}
+
+.container {
+	display: block;
+	position: absolute;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	margin-top: 24px;
+	cursor: pointer;
+	font-size: 18px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	top: 440px;
+}
+
+.container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #5c5a5a;
+}
+
+.container:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+	background-color: #09c109;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.container .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+input[type=submit] {
+	padding: 15px 30px;
+	background-color: #d7dfc7;
+	top: 540px;
+}
+
+input #submit_nyhed {
+	top: 355px;
+}
+
+/*
+#text_til_book {
+	padding: 0 20px;
+}
+*/
+
+#login .submit_login {
+	padding: 15px 30px;
+	background-color: green;
+	position: absolute;
+}
+
+#tilmeldt_nyhedsbrev {
+	width: 23vw;
+	height: 50vh;
+	opacity: 0;
+	color: black;
+	z-index: 20;
+	background-color: white;
+	position: relative;
+	top: 5vh;
+	left: 92vh;
+
+}
+
+.h1_nyhed {
+	padding: 15px 0px;
+	font-size: 1.5rem;
+}
+
+.p_nyhed {
+	padding: 10px;
+}
