@@ -23,8 +23,9 @@
 	<header id="header" data-header>
 
 	</header>
-	<div class="receiver_om" data-receiver></div>
-	<template data-template-om>
+	<div class="wrapper">
+		<div class="receiver_om" data-receiver></div>
+		<template data-template-om>
         <h1>Per Bo</h1>
            <div class="border"></div>
         <div class="text_om" data-text-om>
@@ -42,29 +43,23 @@
 
          </template>
 
-	<div class="video_receiver_om" data-video-receiver></div>
-	<template data-template-video>
+		<div class="video_receiver_om" data-video-receiver></div>
+		<template data-template-video>
     <section class="section_om">
         <div class="video_items">
             <h3 class="om_item_title" data-om-title></h3>
-            <iframe width="420" height="345" src="" data-om-video class="om_video">
-     </iframe>
-
+            <iframe width="420" height="345" src="" data-om-video class="om_video"></iframe>
             <span class="video_description"></span>
         </div>
-
     </section>
-
          </template>
 
-
-	<footer id="footer" class="footer_grid" data-footer></footer>
+		<footer id="footer" class="footer_grid" data-footer></footer>
+	</div>
 	<script src="om.js"></script>
 	<script src="header.js"></script>
 	<script src="footer.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL_Ih-tJnDNMcCvvYdN1tBeEMRY8yjwsE">
-
-
 	</script>
 </body>
 

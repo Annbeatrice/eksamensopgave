@@ -31,7 +31,7 @@ h3 {
 
 h4 {
 	font-family: 'Acumin', sans-serif;
-	font-size: 0.7rem;
+	font-size: 0.9rem;
 }
 
 a {
@@ -77,6 +77,7 @@ img {
 	position: fixed;
 	z-index: 150;
 	background: white;
+	top: 0;
 }
 
 .header_wrapper {
@@ -222,7 +223,7 @@ img {
 
 .wrapper {
 	position: absolute;
-	top: 17vh;
+	top: 9vh;
 }
 
 /********* header desktop end ********/
@@ -255,7 +256,7 @@ img {
 		padding-left: 40px;
 	}
 	.wrapper {
-		top: 18vh;
+		top: 11vh;
 	}
 }
 
@@ -263,7 +264,7 @@ img {
 @media screen and (min-width: 1024px) {
 	.wrapper {
 		position: absolute;
-		top: 22vh;
+		top: 20vh;
 	}
 
 	.quote {
@@ -1117,6 +1118,7 @@ closeBtn:focus {
 		grid-gap: 20px;
 		background: #282828;
 		margin-top: 20px;
+		width: 100vw;
 	}
 	.content_footer {
 		grid-column: 2/3;
@@ -1124,10 +1126,6 @@ closeBtn:focus {
 	}
 	.map {
 		grid-column: 1/2;
-	}
-
-	h4 {
-		font-size: 0.9rem;
 	}
 }
 
