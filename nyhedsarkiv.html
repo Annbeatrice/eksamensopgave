@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,13 +21,13 @@
 
 
 	</header>
+	<div class="wrapper">
+		<h1 class="title">Nyheder</h1>
+		<div class="border"></div>
 
-	<h1 class="title">Nyheder</h1>
-	<div class="border"></div>
 
-
-	<div data-receiver class="receiver_nyhedsarkiv"></div>
-	<template data-template-nyhedsarkiv>
+		<div data-receiver class="receiver_nyhedsarkiv"></div>
+		<template data-template-nyhedsarkiv>
      <a href="" data-item-link>
      <div class="nyhed">
 
@@ -38,12 +39,15 @@
        </div>
        </a>
    </template>
-	<footer id="footer" class="footer_grid" data-footer></footer>
-
+		<footer id="footer" class="footer_grid" data-footer></footer>
+	</div>
 	<script src="nyhedsarkiv.js"></script>
 	<script src="header.js"></script>
 	<script src="footer.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL_Ih-tJnDNMcCvvYdN1tBeEMRY8yjwsE">
+
+
 	</script>
 </body>
+
 </html>
