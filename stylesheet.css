@@ -4,6 +4,11 @@
 }
 
 @font-face {
+	font-family: 'Playfair Italic';
+	src: url(fonts/playfair/PlayfairDisplay-Italic.otf);
+}
+
+@font-face {
 	font-family: 'Acumin';
 	src: url(fonts/acumin-pro/Acumin-regular.otf);
 
@@ -247,9 +252,9 @@ img {
 	margin: 1vh;
 	text-align: center;
 	line-height: 1.8;
-	font-family: 'fairplay display',
+	font-family: 'Playfair Italic',
 	serif;
-	font-style: italic;
+/*	font-style: italic;*/
 	font-size: 1.5rem;
 	max-width: 88vw;
 }
