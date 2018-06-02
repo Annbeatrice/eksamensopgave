@@ -76,7 +76,7 @@ function showProducts() {
 
         let template_clone = webshop_item.cloneNode(true).content;
 
-        template_clone.querySelector("[data-item-link]").href = "/webshop_single.html?id=" + product.id;
+        template_clone.querySelector("[data-item-link]").href = "webshop_single.html?id=" + product.id;
         template_clone.querySelector("[data-item-title]").textContent = product.title.rendered;
 
         template_clone.querySelector("[data-item-price]").innerHTML = product.acf.price + " kr";
