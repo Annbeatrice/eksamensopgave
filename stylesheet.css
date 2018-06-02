@@ -252,9 +252,9 @@ img {
 	margin: 1vh;
 	text-align: center;
 	line-height: 1.8;
-	font-family: 'Playfair Italic',
+	font-family: 'Playfair Display',
 	serif;
-/*	font-style: italic;*/
+	font-style: italic;
 	font-size: 1.5rem;
 	max-width: 88vw;
 }
