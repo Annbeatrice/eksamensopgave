@@ -1,5 +1,3 @@
-/*******SLIDER*******/
-
 document.querySelector(".dot1").addEventListener("click", () => {
     currentSlide(1)
 });
@@ -25,25 +23,19 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-//  console.log("plusSlides()")
   showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-//  console.log("currentSlide()")
   showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-//  console.log("showSlides()")
   var i;
   var slides = document.getElementsByClassName("slides");
   var dots = document.getElementsByClassName("dot");
-//  console.log(slides[slideIndex-1]);
 
-  // Er n större end längden på arrayet?
   if (n > slides.length) {slideIndex = 1}
-  // Er n mindre end 1? false
   if (n < 1) {slideIndex = slides.length}
 
   for (i = 0; i < slides.length; i++) {
@@ -59,7 +51,6 @@ function showSlides(n) {
 
 }
 
-/******GetJson******/
 
 let products;
 
@@ -114,20 +105,13 @@ function filter(){
     let item_skaale = document.querySelectorAll(".skaale");
     let item_tallerkener = document.querySelectorAll(".tallerkener");
 
-    // https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
-
-    // För varje knapp
     buttons.forEach( button => {
-        // ger jag den en eventlistner
         button.addEventListener("click", event => {
-            // Var vi förhindrar att den öppnar en link
             event.preventDefault();
-
-            // Luk dropdown
             openDropdown();
 
             let buttonName = event.target.dataset.button;
-            // Här kommer eventet
+
 
             item_alle.forEach( item => { item.style.display = "none"; })
 
@@ -158,20 +142,12 @@ function filter(){
     })
 }
 
-/*************Modal***************/
 let modal;
 
 function activateModal(){
-    // Get the modal
     modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
     let arrayOfmodalBtns = document.querySelectorAll(".modalBtn");
-
-    // Get the element that closes the modal
     let closeBtn = document.getElementsByClassName("closeBtn")[0];
-
-    // Listen for click
     arrayOfmodalBtns.forEach( modalBtn => {
         modalBtn.addEventListener("click", openModal);
     })
@@ -179,13 +155,10 @@ function activateModal(){
     closeBtn.addEventListener("click", closeModal);
 }
 
-// Open Modal
-
 function openModal(){
 
     modal.style.display = "block";
 
-//    receiver.appendChild(template_clone);
 }
 
 function closeModal(){
@@ -200,15 +173,9 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-
-// Dropdown webshop
-// get dropdwon section
 let dropdownSection = document.querySelector(".section_button");
 let dropdownActive = false;
-// get button that opens section
 let dropdownBtn = document.querySelector("[data-dropbtn-webshop]");
-
-// Listen for click
 dropdownBtn.addEventListener("click", openDropdown);
 
 
@@ -225,4 +192,3 @@ function openDropdown(){
 
 
 }
-

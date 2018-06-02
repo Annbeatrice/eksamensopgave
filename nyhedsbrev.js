@@ -1,4 +1,3 @@
-////////////////////nyhedsbrev
 document.querySelector(".single_btn").addEventListener("click", showNyhedsbrev);
 document.querySelector(".popup").style.pointerEvents = "none";
 
@@ -9,8 +8,6 @@ function showNyhedsbrev() {
 	document.querySelector(".popup").style.pointerEvents = "auto";
 	document.querySelector(".popup").style.opacity = "1";
 	document.querySelector("#submit_nyhed").style.top = "355px";
-
-
 	document.querySelector(".single_btn").addEventListener("click", hideNyhedsbrev);
 }
 document.querySelector(".single_btn_popup").addEventListener("click", hideNyhedsbrev);
@@ -19,7 +16,6 @@ function hideNyhedsbrev() {
 	console.log("luk");
 	document.querySelector(".popup").style.pointerEvents = "none";
 	document.querySelector(".popup").style.opacity = "0";
-
 	document.querySelector(".single_btn_popup").addEventListener("click", resetAll);
 }
 
@@ -31,8 +27,6 @@ function showTilmeldtNyhedsbrev() {
 
 	document.querySelector("[data-tilmeldingModtaget]").style.opacity = "1";
 	document.querySelector("[data-tilmeldingModtaget]").style.pointerEvents = "auto";
-
-
 	setTimeout(slut, 5000);
 }
 
@@ -44,10 +38,6 @@ function slut() {
 
 	resetAll();
 }
-
-///////////////////////////nyhedsbrev slut
-
 function resetAll() {
 	location.reload();
-} //denne funktion fungere ligesom din reload knap i browseren
-/*nulstil SLUT*/
+}

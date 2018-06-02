@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", getJson);
 async function getJson(){
 
     let jsonObject = await fetch("http://josefinerasch.dk/kea/08-eksamensprojekt/wordpress/wp-json/wp/v2/nyhedsgalleri?per_page=100");
-
-
     nyhedsarkiv = await jsonObject.json();
 
     showNyhedsarkiv();
@@ -30,6 +28,4 @@ function showNyhedsarkiv(){
         receiver.appendChild(template_clone);
 
     })
-
-
 }
